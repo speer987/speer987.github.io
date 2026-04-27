@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </div>
       {/* HERO SEGMENT */}
-      <div className="">
+      <div>
         <div className="divide-x divide-[#5b422a] flex flex-row text-[#5b422a] bg-[#fbf6ee]">
           <div className="flex flex-col gap-1 p-25 font-sans flex-none">
             <p className="text-2xl">Hello, I'm</p>
@@ -77,6 +77,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* WORK EXP SEGMENT */}
       <div className="py-25 px-30 flex flex-col gap-20">
         <div className="flex flex-row justify-between">
           <div className="font-serif text-4xl">
