@@ -1,34 +1,63 @@
 import { Link } from "react-router";
+type props = {
+  selectedProjects: boolean;
+  selectedWork: boolean;
+  selectedResume: boolean;
+  selectedName: boolean;
+};
 
-export default function Header() {
+export default function Header({
+  selectedProjects,
+  selectedWork,
+  selectedResume,
+  selectedName,
+}: props) {
   return (
     <div className="flex justify-between p-2.5 fixed h-14 z-20 w-full bg-[#f5f1e8]/50 backdrop-blur-md items-center border-b border-[#5b422a]">
       <div className="flex flex-1">
         <Link
           to="/projects"
-          className="text-center p-2 font-barlow uppercase  text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
+          className={
+            selectedProjects
+              ? "text-center p-2 font-barlow uppercase text-[#f5f1e8] font-medium bg-[#5b422a] decoration-2 underline-offset-4"
+              : "text-center p-2 font-barlow uppercase text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
+          }
         >
           Projects
         </Link>
         <Link
           to="/work"
-          className="text-center p-2 font-barlow uppercase  text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
+          className={
+            selectedWork
+              ? "text-center p-2 font-barlow uppercase  text-[#f5f1e8] font-medium bg-[#5b422a] decoration-2 underline-offset-4"
+              : "text-center p-2 font-barlow uppercase  text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
+          }
         >
           Work Experience
         </Link>
         <Link
           to="/resume"
-          className="text-center p-2 font-barlow uppercase  text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
+          className={
+            selectedResume
+              ? "text-center p-2 font-barlow uppercase  text-[#f5f1e8] font-medium bg-[#5b422a] decoration-2 underline-offset-4"
+              : "text-center p-2 font-barlow uppercase  text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
+          }
         >
           Resume
         </Link>
       </div>
-      <Link
-        to="/"
-        className="flex flex-1 justify-center p-2 font-serif text-4xl text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition duration-300 ease-in-out"
-      >
-        Saarah Peer
-      </Link>
+      <div className="p-2.5">
+        <Link
+          to="/"
+          className={
+            selectedName
+              ? "text-center text-lg p-2 font-barlow tracking-widest uppercase  text-[#f5f1e8] font-semibold bg-[#5b422a] decoration-2 underline-offset-4"
+              : "text-center text-lg p-2 font-barlow uppercase  tracking-widest font-semibold text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out"
+          }
+        >
+          Saarah Peer
+        </Link>
+      </div>
       <div className="flex flex-1 justify-end">
         <Link
           to="https://github.com/speer987"
@@ -45,7 +74,7 @@ export default function Header() {
           Linkedin
         </Link>
         <Link
-          to="/"
+          to="mailto:saarah.peer15@gmail.com"
           className="text-center p-2 font-barlow uppercase  text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
         >
           EMail

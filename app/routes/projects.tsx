@@ -5,7 +5,12 @@ import Header from "~/components/Header";
 export default function Work() {
   return (
     <div className="divide-y divide-[#5b422a] text-[#5b422a]">
-      <Header />
+      <Header
+        selectedName={false}
+        selectedResume={false}
+        selectedProjects={true}
+        selectedWork={false}
+      />
       <div className="pt-14">
         <div className="flex flex-col py-25 px-30 gap-10">
           <div className="text-5xl font-serif text-center">All Projects</div>

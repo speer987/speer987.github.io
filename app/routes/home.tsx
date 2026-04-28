@@ -7,7 +7,12 @@ export default function Home() {
   return (
     <div className="text-[#5b422a]">
       {/* HEADER / LINK BAR */}
-      <Header />
+      <Header
+        selectedName={true}
+        selectedResume={false}
+        selectedProjects={false}
+        selectedWork={false}
+      />
       {/* HERO SEGMENT */}
       <Hero />
       {/* WORK EXP SEGMENT */}
