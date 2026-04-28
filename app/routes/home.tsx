@@ -5,7 +5,7 @@ import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 export default function Home() {
   return (
-    <div className="divide-y divide-[#5b422a] text-[#5b422a]">
+    <div className="text-[#5b422a]">
       {/* HEADER / LINK BAR */}
       <Header />
       {/* HERO SEGMENT */}
