@@ -64,6 +64,40 @@ export function ProjCard({
   );
 }
 
-export function ProjCardHorizontal() {
-  return <div></div>;
+// TODO: Fix classes for this so they are clearer.
+export function ProjCardHorizontal({
+  category,
+  title,
+  monthYear,
+  desc,
+  skills,
+  links,
+}: projCardProps) {
+  console.log(skills);
+  return (
+    <div className="flex flex-row divide-x divide-[#e8d4b6] border-2 border-[#e8d4b6] h-80">
+      <div className="relative w-1/3">
+        <p className="absolute left-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#f4e4cf]">
+          {category}
+        </p>
+        <img
+          className="object-cover h-full w-full z-0"
+          src="app/imgs/filler.jpg"
+        />
+      </div>
+      <div className="w-2/3 flex flex-col divide-y divide-[#e8d4b6]">
+        <div className="bg-[#fbf6ee] flex flex-col px-10 py-8 gap-2.5 flex-1">
+          <div>
+            <h1 className="font-serif text-3xl text-center">{title}</h1>
+            <p className="text-center font-barlow uppercase font-medium">
+              {monthYear}
+            </p>
+          </div>
+          <InfoList desc={desc} />
+          <SkillPills skills={skills} centeredText={true} />
+        </div>
+        <ProjLinks links={links} />
+      </div>
+    </div>
+  );
 }
