@@ -11,6 +11,9 @@ type projCardProps = {
   category: string;
   title: string;
   monthYear: string;
+  desc: string;
+  skills: string[];
+  links: Record<string, string>;
 };
 
 export function WorkCard({ company, role }: workCardProps) {
@@ -20,13 +23,21 @@ export function WorkCard({ company, role }: workCardProps) {
         <div className="text-4xl font-serif">{company}</div>
         <div className="text-md font-barlow font-medium uppercase">{role}</div>
       </div>
-      <InfoList />
-      <SkillPills centeredText={false} />
+      {/* <InfoList /> */}
+      {/* <SkillPills centeredText={false} /> */}
     </div>
   );
 }
 
-export function ProjCard({ category, title, monthYear }: projCardProps) {
+export function ProjCard({
+  category,
+  title,
+  monthYear,
+  desc,
+  skills,
+  links,
+}: projCardProps) {
+  console.log(skills);
   return (
     <div className="divide-y divide-[#f4e4cf] border-2 border-[#f4e4cf]">
       <div className="relative">
@@ -38,17 +49,21 @@ export function ProjCard({ category, title, monthYear }: projCardProps) {
           src="app/imgs/filler.jpg"
         />
       </div>
-      <div className="bg-[#fbf6ee] px-10 py-8 flex flex-col gap-1.5">
+      <div className="bg-[#fbf6ee] px-10 py-8 flex flex-col gap-5">
         <div>
           <h1 className="font-serif text-3xl text-center">{title}</h1>
           <p className="text-center font-barlow uppercase font-medium">
             {monthYear}
           </p>
+          <InfoList desc={desc} />
         </div>
-        <InfoList />
-        <SkillPills centeredText={true} />
+        <SkillPills skills={skills} centeredText={true} />
       </div>
-      <ProjLinks />
+      <ProjLinks links={links} />
     </div>
   );
+}
+
+export function ProjCardHorizontal() {
+  return <div></div>;
 }

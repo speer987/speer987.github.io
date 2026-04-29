@@ -1,8 +1,10 @@
 type props = {
   centeredText: boolean;
+  skills: string[];
 };
 
-export default function SkillPills({ centeredText }: props) {
+export default function SkillPills({ centeredText, skills }: props) {
+  console.log(skills);
   return (
     <div className="flex flex-col gap-1.5">
       {centeredText ? (
@@ -12,11 +14,16 @@ export default function SkillPills({ centeredText }: props) {
       ) : (
         <p className="font-barlow uppercase font-medium">Skills List</p>
       )}
-      <ul className="flex flex-row gap-2 flex-wrap font-barlow uppercase tracking-wide">
-        <li className="bg-white px-1 border border-[#f4e4cf]">React.js</li>
-        <li className="bg-white px-1 border border-[#f4e4cf]">Next.js</li>
-        <li className="bg-white px-1 border border-[#f4e4cf]">skill 3</li>
-      </ul>
+
+      {skills?.length > 0 && (
+        <ul className="justify-center flex flex-row gap-1 flex-wrap font-barlow uppercase tracking-wide">
+          {skills?.map((skill) => (
+            <li key={skill} className="bg-white px-1 border border-[#f4e4cf]">
+              {skill}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
