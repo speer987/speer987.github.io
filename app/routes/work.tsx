@@ -1,6 +1,7 @@
 import { WorkCard } from "~/components/Cards";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
+import work from "../data/work_info";
 
 export default function Work() {
   return (
@@ -17,10 +18,17 @@ export default function Work() {
             All Work Experience & Mentorships
           </div>
           <div className="grid grid-cols-2 gap-7">
-            <WorkCard company="dummy" role="dummy" />
-            <WorkCard company="dummy" role="dummy" />
-            <WorkCard company="dummy" role="dummy" />
-            <WorkCard company="dummy" role="dummy" />
+            {work?.map((exp) => (
+              <WorkCard
+                key={exp?.role}
+                company={exp?.company}
+                role={exp?.role}
+                date={exp?.monthYear}
+                location={exp?.location}
+                sentence={exp?.sentence}
+                destination=""
+              />
+            ))}
           </div>
         </div>
         <Footer />

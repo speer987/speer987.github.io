@@ -1,7 +1,16 @@
 import { Link } from "react-router";
 
 type props = {
-  links: Record<string, string>;
+  links: Links;
+};
+
+type Links = {
+  code?: string;
+  readme?: string;
+  demo?: string;
+  "codesandbox demo"?: string;
+  "github pages demo"?: string;
+  devpost?: string;
 };
 
 export default function ProjLinks({ links }: props) {
@@ -22,16 +31,6 @@ export default function ProjLinks({ links }: props) {
             </Link>
           ))
         : ""}
-
-      {/* <li className="cursor-pointer flex-1 p-1.5 text-center font-medium text-[#fbf6ee] bg-[#A8794D] hover:bg-[#5b422a] transition ease-in-out duration-300">
-        Github
-      </li>
-      <li className="cursor-pointer flex-1 p-1.5 text-center font-medium text-[#fbf6ee] bg-[#A8794D] hover:bg-[#5b422a] transition ease-in-out duration-300">
-        Github
-      </li>
-      <li className="cursor-pointer flex-1 p-1.5 text-center font-medium text-[#fbf6ee] bg-[#A8794D] hover:bg-[#5b422a] transition ease-in-out duration-300">
-        Github
-      </li> */}
     </ul>
   );
 }

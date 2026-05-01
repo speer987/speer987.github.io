@@ -1,28 +1,61 @@
 import InfoList from "./InfoList";
 import ProjLinks from "./ProjLinks";
 import SkillPills from "./SkillPills";
+import { Link } from "react-router";
 
 type workCardProps = {
   company: string;
   role: string;
+  date: string;
+  location: string;
+  sentence: string;
+  destination: string;
+};
+
+type Links = {
+  code?: string;
+  readme?: string;
+  demo?: string;
+  "codesandbox demo"?: string;
+  "github pages demo"?: string;
+  devpost?: string;
 };
 
 type projCardProps = {
   category: string;
   title: string;
-  monthYear: string;
-  desc: string;
+  monthYear?: string;
+  desc: string[];
   skills: string[];
-  links: Record<string, string>;
-  img: string;
+  links?: Links;
+  img?: string;
+  sentence: string;
 };
 
-export function WorkCard({ company, role }: workCardProps) {
+export function WorkCard({
+  company,
+  role,
+  date,
+  location,
+  sentence,
+  destination,
+}: workCardProps) {
   return (
     <div className="flex flex-col bg-[#fbf6ee] border-2 border-[#f4e4cf] p-10 gap-1.5">
       <div>
-        <div className="text-4xl font-serif">{company}</div>
-        <div className="text-md font-barlow font-medium uppercase">{role}</div>
+        <div className="text-3xl font-serif">{role}</div>
+        <div className="font-barlow flex flex-row justify-between">
+          <div className="flex flex-row gap-1">
+            <div className="font-barlow font-medium uppercase">{company}</div>
+            <p>▪</p>
+            <div className="font-barlow">{location}</div>
+          </div>
+          <div className="font-medium font-barlow uppercase">{date}</div>
+        </div>
+      </div>
+
+      <div className="relative">
+        <InfoList destination={destination} sentence={sentence} />
       </div>
       {/* <InfoList /> */}
       {/* <SkillPills centeredText={false} /> */}
@@ -37,6 +70,7 @@ export function ProjCard({
   desc,
   skills,
   links,
+  sentence,
 }: projCardProps) {
   console.log(skills);
   return (
@@ -53,14 +87,17 @@ export function ProjCard({
       <div className="bg-[#fbf6ee] p-10 flex flex-col gap-3">
         <div>
           <h1 className="font-serif text-3xl text-center">{title}</h1>
-          <p className="text-center font-barlow uppercase font-medium">
-            {monthYear}
-          </p>
+          {monthYear && (
+            <p className="text-center font-barlow uppercase font-medium">
+              {monthYear}
+            </p>
+          )}
         </div>
-        <InfoList desc={desc} />
-        {/* <SkillPills skills={skills} centeredText={true} /> */}
+        <InfoList sentence={sentence} destination="/projects" />
+
+        <SkillPills skills={skills} centeredText={true} />
       </div>
-      <ProjLinks links={links} />
+      {links && <ProjLinks links={links} />}
     </div>
   );
 }
@@ -74,6 +111,7 @@ export function ProjCardHorizontal({
   skills,
   links,
   img,
+  sentence,
 }: projCardProps) {
   console.log(skills);
   return (
@@ -105,10 +143,18 @@ export function ProjCardHorizontal({
               {monthYear}
             </p>
           </div>
-          <InfoList desc={desc} />
+          <InfoList sentence={sentence} destination="" />
+          {/* <p>{desc}</p> */}
+          {desc?.length > 0 && (
+            <ul className="list-disc list-inside">
+              {desc?.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          )}
           <SkillPills skills={skills} centeredText={true} />
         </div>
-        <ProjLinks links={links} />
+        {links && <ProjLinks links={links} />}
       </div>
     </div>
   );

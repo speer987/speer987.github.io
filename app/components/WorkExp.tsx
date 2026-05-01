@@ -1,5 +1,6 @@
 import { WorkCard } from "./Cards";
 import SectionLinks from "./SectionLinks";
+import work from "../data/work_info";
 
 export default function WorkExp() {
   return (
@@ -9,19 +10,18 @@ export default function WorkExp() {
         section="Work Experience & Mentorships"
         linkLabel="See All Work Experience"
       />
-      <div className="grid grid-cols-3 gap-7">
-        <WorkCard
-          company="Google"
-          role="Computer Science Summer Institute Student"
-        />
-        <WorkCard
-          company="Google"
-          role="Computer Science Summer Institute Student"
-        />
-        <WorkCard
-          company="Google"
-          role="Computer Science Summer Institute Student"
-        />
+      <div className="grid grid-cols-2 gap-7">
+        {work?.map((exp) => (
+          <WorkCard
+            key={exp?.role}
+            company={exp?.company}
+            role={exp?.role}
+            date={exp?.monthYear}
+            location={exp?.location}
+            sentence={exp?.sentence}
+            destination="/work"
+          />
+        ))}
       </div>
     </div>
   );

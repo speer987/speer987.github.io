@@ -25,6 +25,7 @@ export default function Project() {
                   category={proj?.category}
                   title={proj?.project}
                   monthYear={proj?.monthYear}
+                  sentence={proj?.sentence}
                   desc={proj?.desc}
                   skills={proj?.stack}
                   links={proj?.links}
