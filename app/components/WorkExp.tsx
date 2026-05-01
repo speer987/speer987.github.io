@@ -11,7 +11,7 @@ export default function WorkExp() {
         linkLabel="See All Work Experience"
       />
       <div className="grid grid-cols-2 gap-7">
-        {work?.map((exp) => (
+        {work?.slice(0, 4).map((exp) => (
           <WorkCard
             key={exp?.role}
             company={exp?.company}

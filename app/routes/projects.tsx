@@ -13,7 +13,7 @@ export default function Project() {
         selectedWork={false}
       />
       <div className="pt-14">
-        <div className="flex flex-col py-25 px-30 gap-10">
+        <div className="flex flex-col py-25 px-50 gap-10">
           <div className="text-5xl font-serif text-center">All Projects</div>
           <div className="flex flex-col gap-10">
             {[...projects] // ... makes a copy of the array so sort doesn't mutate the original list.

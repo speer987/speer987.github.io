@@ -1,4 +1,4 @@
-import { WorkCard } from "~/components/Cards";
+import { WorkCard, WorkCardHorizontal } from "~/components/Cards";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import work from "../data/work_info";
@@ -13,17 +13,18 @@ export default function Work() {
         selectedWork={true}
       />
       <div className="pt-14">
-        <div className="flex flex-col py-25 px-30 gap-10">
+        <div className="flex flex-col py-25 px-50 gap-10">
           <div className="text-5xl font-serif text-center">
             All Work Experience & Mentorships
           </div>
-          <div className="grid grid-cols-2 gap-7">
+          <div className="flex flex-col gap-7">
             {work?.map((exp) => (
-              <WorkCard
+              <WorkCardHorizontal
                 key={exp?.role}
                 company={exp?.company}
                 role={exp?.role}
                 date={exp?.monthYear}
+                desc={exp?.desc}
                 location={exp?.location}
                 sentence={exp?.sentence}
                 destination=""

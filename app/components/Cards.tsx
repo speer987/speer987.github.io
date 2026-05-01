@@ -10,6 +10,7 @@ type workCardProps = {
   location: string;
   sentence: string;
   destination: string;
+  desc: string[];
 };
 
 type Links = {
@@ -41,22 +42,75 @@ export function WorkCard({
   destination,
 }: workCardProps) {
   return (
-    <div className="flex flex-col bg-[#fbf6ee] border-2 border-[#f4e4cf] p-10 gap-1.5">
+    <div className="relative flex flex-col bg-[#fbf6ee] border-2 border-[#f4e4cf] p-10 gap-1.5">
       <div>
         <div className="text-3xl font-serif">{role}</div>
-        <div className="font-barlow flex flex-row justify-between">
+        <div className="font-barlow flex flex-row justify-between flex-wrap">
           <div className="flex flex-row gap-1">
             <div className="font-barlow font-medium uppercase">{company}</div>
             <p>▪</p>
             <div className="font-barlow">{location}</div>
           </div>
-          <div className="font-medium font-barlow uppercase">{date}</div>
+          {destination == "" ? (
+            <div className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-r-2 border-b-2 border-[#f4e4cf]">
+              {date}
+            </div>
+          ) : (
+            <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-l-2 border-[#f4e4cf]">
+              {date}
+            </div>
+          )}
         </div>
       </div>
 
       <div className="relative">
         <InfoList destination={destination} sentence={sentence} />
       </div>
+      {/* <InfoList /> */}
+      {/* <SkillPills centeredText={false} /> */}
+    </div>
+  );
+}
+
+export function WorkCardHorizontal({
+  company,
+  role,
+  date,
+  location,
+  sentence,
+  destination,
+  desc,
+}: workCardProps) {
+  return (
+    <div className="relative flex flex-col bg-[#fbf6ee] border-2 border-[#f4e4cf] p-10 gap-1.5">
+      <div>
+        <div className="text-3xl font-serif">{role}</div>
+        <div className="font-barlow flex flex-row justify-between flex-wrap">
+          <div className="flex flex-row gap-1">
+            <div className="font-barlow font-medium uppercase">{company}</div>
+            <p>▪</p>
+            <div className="font-barlow">{location}</div>
+          </div>
+          <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-l-2 border-[#f4e4cf]">
+            {date}
+          </div>
+        </div>
+      </div>
+
+      <div className="relative">
+        <InfoList destination={destination} sentence={sentence} />
+      </div>
+
+      <div>
+        {desc?.length > 0 && (
+          <ul className="list-[square] list-inside">
+            {desc?.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+      {/* <SkillPills skills={skills} centeredText={true} /> */}
       {/* <InfoList /> */}
       {/* <SkillPills centeredText={false} /> */}
     </div>
@@ -74,7 +128,7 @@ export function ProjCard({
 }: projCardProps) {
   console.log(skills);
   return (
-    <div className="divide-y divide-[#f4e4cf] border-2 border-[#f4e4cf]">
+    <div className="h-full flex flex-col divide-y divide-[#f4e4cf] border-2 border-[#f4e4cf]">
       <div className="relative">
         <p className="absolute right-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-l-2 border-[#f4e4cf]">
           {category}
@@ -84,17 +138,18 @@ export function ProjCard({
           src="app/imgs/filler.jpg"
         />
       </div>
-      <div className="bg-[#fbf6ee] p-10 flex flex-col gap-3">
-        <div>
-          <h1 className="font-serif text-3xl text-center">{title}</h1>
-          {monthYear && (
-            <p className="text-center font-barlow uppercase font-medium">
-              {monthYear}
-            </p>
-          )}
+      <div className="bg-[#fbf6ee] p-10 flex flex-col gap-5 flex-1">
+        <div className="gap-3">
+          <div>
+            <h1 className="font-serif text-3xl text-center">{title}</h1>
+            {monthYear && (
+              <p className="text-center font-barlow uppercase font-medium">
+                {monthYear}
+              </p>
+            )}
+          </div>
+          <InfoList sentence={sentence} destination="/projects" />
         </div>
-        <InfoList sentence={sentence} destination="/projects" />
-
         <SkillPills skills={skills} centeredText={true} />
       </div>
       {links && <ProjLinks links={links} />}
@@ -102,7 +157,6 @@ export function ProjCard({
   );
 }
 
-// TODO: Fix classes for this so they are clearer.
 export function ProjCardHorizontal({
   category,
   title,
@@ -116,42 +170,28 @@ export function ProjCardHorizontal({
   console.log(skills);
   return (
     <div className="flex flex-row divide-x divide-[#e8d4b6] border-2 border-[#e8d4b6]">
-      <div className={`relative ${img ? "w-2/5" : ""}`}>
-        {img ? (
-          <p className="absolute left-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
+      <div className="relative w-full flex flex-col divide-y divide-[#e8d4b6]">
+        <div className="bg-[#fbf6ee] flex flex-col p-10 gap-2.5 flex-1">
+          <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
             {category}
           </p>
-        ) : (
-          ""
-        )}
-        {img ? <img className="object-cover w-full z-0" src={img} /> : ""}
-      </div>
-      <div
-        className={`relative ${img ? "w-3/5" : "w-full"} flex flex-col divide-y divide-[#e8d4b6]`}
-      >
-        <div className="bg-[#fbf6ee] flex flex-col p-10 gap-2.5 flex-1">
           <div>
-            {img ? (
-              ""
-            ) : (
-              <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
-                {category}
-              </p>
-            )}
-            <h1 className="font-serif text-3xl text-center">{title}</h1>
+            <h1 className="font-serif text-4xl text-center">{title}</h1>
             <p className="text-center font-barlow uppercase font-medium">
               {monthYear}
             </p>
           </div>
           <InfoList sentence={sentence} destination="" />
           {/* <p>{desc}</p> */}
-          {desc?.length > 0 && (
-            <ul className="list-disc list-inside">
-              {desc?.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          )}
+          <div>
+            {desc?.length > 0 && (
+              <ul className="list-[square] list-inside">
+                {desc?.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
+          </div>
           <SkillPills skills={skills} centeredText={true} />
         </div>
         {links && <ProjLinks links={links} />}
@@ -159,3 +199,48 @@ export function ProjCardHorizontal({
     </div>
   );
 }
+
+// <div className="flex flex-row divide-x divide-[#e8d4b6] border-2 border-[#e8d4b6]">
+//   <div className={`relative ${img ? "w-2/6" : ""}`}>
+//     {img ? (
+//       <p className="absolute left-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
+//         {category}
+//       </p>
+//     ) : (
+//       ""
+//     )}
+//     {img ? <img className="object-cover w-full z-0" src={img} /> : ""}
+//   </div>
+//   <div
+//     className={`relative ${img ? "w-4/6" : "w-full"} flex flex-col divide-y divide-[#e8d4b6]`}
+//   >
+//     <div className="bg-[#fbf6ee] flex flex-col p-10 gap-2.5 flex-1">
+//       <div>
+//         {img ? (
+//           ""
+//         ) : (
+//           <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
+//             {category}
+//           </p>
+//         )}
+//         <h1 className="font-serif text-3xl text-center">{title}</h1>
+//         <p className="text-center font-barlow uppercase font-medium">
+//           {monthYear}
+//         </p>
+//       </div>
+//       <InfoList sentence={sentence} destination="" />
+//       {/* <p>{desc}</p> */}
+//       <div className="inset-shadow-sm">
+//         {desc?.length > 0 && (
+//           <ul className="h-24 overflow-y-auto list-[square] list-inside">
+//             {desc?.map((item) => (
+//               <li key={item}>{item}</li>
+//             ))}
+//           </ul>
+//         )}
+//       </div>
+//       <SkillPills skills={skills} centeredText={true} />
+//     </div>
+//     {links && <ProjLinks links={links} />}
+//   </div>
+// </div>

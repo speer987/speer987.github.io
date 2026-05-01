@@ -9,12 +9,12 @@ const projects = [
     sentence:
       "An AI-powered planning app that turns high-level goals into structured quarterly, monthly, and weekly plans using the Gemini API.",
     desc: [
-      "Built an AI powered full-stack web app that breaks down long-term yearly goals into quarterly, monthly, weekly, and daily steps to reduce overwhelm and improve planning clarity.",
-      "Integrated the Google Gemini API to generate goal suggestions, clarifying questions, and structured plans, with prompt engineering to ensure consistent, parseable JSON output.",
-      "Implemented loading, error, and rate-limit states (including 429 handling) to give users clear feedback during async AI operations.",
-      "Developed a responsive, modern UI using React, Next.js, Tailwind CSS, and Headless UI, leveraging accordions and conditional rendering to guide users through a multi-step flow.",
-      "Managed complex client-side state for user input, AI responses, and plan selection, ensuring predictable data flow across components.",
-      "Deployed the application on Vercel with environment-based configuration to keep API keys secure and production-ready.",
+      "Built a full-stack application using the Gemini API to convert user inputted long-term goals into structured, concise and actionable steps",
+      "Designed prompt workflows that return structured JSON, ensuring consistent and parseable AI outputs across the system",
+      "Implemented loading, error, and rate-limit handling (including 429 responses), providing clear feedback during AI request failures",
+      "Developed a responsive UI with Next.js, React, and Tailwind CSS, supporting a guided multi-step planning flow",
+      "Managed client-side state for AI responses and user inputs, ensuring consistent data flow across components",
+      "Deployed the application on Vercel with environment-based configuration, securely managing API keys in production"
     ],
     stack: [
       "Google Gemini API",
@@ -39,19 +39,19 @@ const projects = [
     },
   },
   {
-    feature: false,
-    project: "React Native LMU Marketplace Mobile App",
+    feature: true,
+    project: "Marketplace Mobile App",
     category: "Mobile App & UI Design",
-    // monthYear: "Jan 2024 - Aug 2024",
+    monthYear: "Jan 2024 - Aug 2024",
     year: 2024,
     img: "app/imgs/filler.jpg",
-    sentence: "Built a React Native marketplace app (as a proof of concept) for Loyola Marymount University students to list, browse, and favorite items with secure account management and authentication.",
+    sentence: "A React Native marketplace app for Loyola Marymount University students to list, browse, and favorite items with secure account management and authentication.",
      desc: [
-      "Partnered with a business student to define app functionality and UI before development.",
-      "Designed a Figma prototype prior to app development, highlighting Favorites, User Listings, Create Listing, and All Listings pages.",
-      "Integrated Firebase/Firestore to manage listings and user accounts, tracking join dates and item details.",
-      "Implemented Clerk Authentication for Google and Outlook sign-ins, displaying verified badges for Outlook users.",
-      "Developed listing cards with photos, prices, descriptions, and detailed pop-ups.",
+      "Collaborated with a business student to define requirements and core user flows, aligning product design with user needs",
+      "Designed Figma prototypes for listing, user, and creation flows, establishing a clear UI structure prior to development",
+      "Developed a Firebase/Firestore backend, enabling real-time listing storage and user management",
+      "Integrated Clerk authentication with Google and Outlook sign-in, including verified user indicators",
+      "Implemented dynamic listing components with images, pricing, and detail views, improving browsing experience and engagement"
     ], 
     stack: [
         "Software Engineering Principles",
@@ -73,43 +73,35 @@ const projects = [
     },
     },
     {
-      feature: false,
+      feature: true,
       project: "React Book Wishlist/Tracking Web App (The Book Nook)",
       category: "Web App Development & UI Design",
       // monthYear: "Aug 2023 - Dec 2023",
       year: 2023,
       img: "app/imgs/filler.jpg",
-      sentence:
-      "Developed a React web app for book enthusiasts to search, track, and organize books in virtual bookshelves using dynamic APIs and progress tracking.",
-    desc: [
-      "Built a full-stack React app enabling users to browse, search, and organize books into Firestore-backed shelves like 'to-read', 'read', and 'completed'.",
-      "Integrated Google Books API, NYT Books API, and Open Library API for live search and bestseller browsing.",
-      "Implemented Chart.js to visualize users’ daily and weekly reading progress on bookshelf pages.",
-      "Added Google Authentication for personalized bookshelves and cross-session progress tracking.",
-      "Crafted reusable, responsive React components with Tailwind CSS, including book cards displaying covers, titles, ratings, and interactive features.",
-      "Presented progress during bi-weekly meetings, incorporated peer feedback, and demonstrated app functionality.",
+      sentence: "A React web app that lets users search, track, and organize books into virtual bookshelves using external APIs and progress tracking.",
+      desc: [
+      "Built a full-stack React application for managing personal reading lists using Firestore-backed shelves",  
+      "Integrated Google Books, NYT Books, and Open Library APIs, enabling comprehensive book search and discovery",
+      "Implemented Chart.js visualizations, displaying user reading progress over time",
+      "Added Google Authentication, supporting persistent and personalized user data",
+      "Developed reusable Tailwind CSS components, ensuring consistent and maintainable UI design",
+      "Presented progress in team reviews and incorporated feedback, iterating on usability and feature improvements",
     ],
-      stack: [
-        "React.js",
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Open Library API",
-        "Google Books API",
-        "New York Times Best Selling Book API",
-        "Google Authentication via Firebase",
-        "Firestore",
-        "Firebase Hosting",
-        "Chart.js",
-        "Tailwind CSS",
-        "Gantt Charts",
-        "Bi-Weekly Presentations (stand up meetings)",
-        "Peer Reviews",
-        "Poster Boarding",
-        "Google Fonts",
-        "Github",
-        "Git",
-      ],
+     stack: [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Tailwind CSS",
+      "Firebase (Auth, Firestore, Hosting)",
+      "Google Books API",
+      "Open Library API",
+      "NYT Books API",
+      "Chart.js",
+      "Google Auth",
+      "Git/GitHub",
+      "UX Collaboration (Agile, peer reviews, presentations)",
+],
       links: {
       code: "https://github.com/speer987/the-book-nook",
       readme:
@@ -139,7 +131,8 @@ const projects = [
         "Git",
       ],
       links: {
-        code: "https://github.com/alex-armknecht/YeeHaw"
+        code: "https://github.com/alex-armknecht/YeeHaw",
+        readme: "https://github.com/alex-armknecht/YeeHaw/blob/4b3711c222848e3e8cec83154276e83aca19703a/README.md"
       }
     },
     {
@@ -224,7 +217,7 @@ const projects = [
       "Communication Skills",
       "Presentation Skills",
     ],
-    links:{ code: "https://github.com/joanna-estrada/nutrition",
+    links:{ code: "https://github.com/joanna-estrada/nutrition", readme: "https://github.com/joanna-estrada/nutrition/blob/b3666b881c75463a2b1badf6c32d5e235785a5e0/README.md"
 }
   },
     {
