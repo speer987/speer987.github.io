@@ -15,12 +15,13 @@ export default function Project() {
       <div className="pt-14">
         <div className="flex flex-col py-25 px-30 gap-10">
           <div className="text-5xl font-serif text-center">All Projects</div>
-          <div className="gap-7">
+          <div className="flex flex-col gap-10">
             {[...projects] // ... makes a copy of the array so sort doesn't mutate the original list.
               .sort((a, b) => b.year - a.year) // sorts projects by descending order by comparing years. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
               .map((proj) => (
                 <ProjCardHorizontal
-                  key={proj.project}
+                  img={proj?.img}
+                  key={proj?.project}
                   category={proj?.category}
                   title={proj?.project}
                   monthYear={proj?.monthYear}

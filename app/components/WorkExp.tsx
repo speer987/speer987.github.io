@@ -5,6 +5,7 @@ export default function WorkExp() {
   return (
     <div className="flex flex-col gap-5">
       <SectionLinks
+        link="/work"
         section="Work Experience & Mentorships"
         linkLabel="See All Work Experience"
       />

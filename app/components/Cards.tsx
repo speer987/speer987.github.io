@@ -14,6 +14,7 @@ type projCardProps = {
   desc: string;
   skills: string[];
   links: Record<string, string>;
+  img: string;
 };
 
 export function WorkCard({ company, role }: workCardProps) {
@@ -49,15 +50,15 @@ export function ProjCard({
           src="app/imgs/filler.jpg"
         />
       </div>
-      <div className="bg-[#fbf6ee] px-10 py-8 flex flex-col gap-5">
+      <div className="bg-[#fbf6ee] p-10 flex flex-col gap-3">
         <div>
           <h1 className="font-serif text-3xl text-center">{title}</h1>
           <p className="text-center font-barlow uppercase font-medium">
             {monthYear}
           </p>
-          <InfoList desc={desc} />
         </div>
-        <SkillPills skills={skills} centeredText={true} />
+        <InfoList desc={desc} />
+        {/* <SkillPills skills={skills} centeredText={true} /> */}
       </div>
       <ProjLinks links={links} />
     </div>
@@ -72,22 +73,33 @@ export function ProjCardHorizontal({
   desc,
   skills,
   links,
+  img,
 }: projCardProps) {
   console.log(skills);
   return (
-    <div className="flex flex-row divide-x divide-[#e8d4b6] border-2 border-[#e8d4b6] h-80">
-      <div className="relative w-1/3">
-        <p className="absolute left-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#f4e4cf]">
-          {category}
-        </p>
-        <img
-          className="object-cover h-full w-full z-0"
-          src="app/imgs/filler.jpg"
-        />
+    <div className="flex flex-row divide-x divide-[#e8d4b6] border-2 border-[#e8d4b6]">
+      <div className={`relative ${img ? "w-2/5" : ""}`}>
+        {img ? (
+          <p className="absolute left-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
+            {category}
+          </p>
+        ) : (
+          ""
+        )}
+        {img ? <img className="object-cover w-full z-0" src={img} /> : ""}
       </div>
-      <div className="w-2/3 flex flex-col divide-y divide-[#e8d4b6]">
-        <div className="bg-[#fbf6ee] flex flex-col px-10 py-8 gap-2.5 flex-1">
+      <div
+        className={`relative ${img ? "w-3/5" : "w-full"} flex flex-col divide-y divide-[#e8d4b6]`}
+      >
+        <div className="bg-[#fbf6ee] flex flex-col p-10 gap-2.5 flex-1">
           <div>
+            {img ? (
+              ""
+            ) : (
+              <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
+                {category}
+              </p>
+            )}
             <h1 className="font-serif text-3xl text-center">{title}</h1>
             <p className="text-center font-barlow uppercase font-medium">
               {monthYear}

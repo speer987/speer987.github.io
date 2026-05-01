@@ -13,6 +13,7 @@ export default function ProjLinks({ links }: props) {
             <Link
               key={source}
               to={link}
+              target="_blank"
               className="cursor-pointer flex-1 p-1.5 text-center font-medium
           text-[#fbf6ee] bg-[#A8794D] hover:bg-[#5b422a] transition ease-in-out
           duration-300"

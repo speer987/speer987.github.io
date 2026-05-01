@@ -5,7 +5,11 @@ import projects from "~/data/proj_info";
 export default function Projects() {
   return (
     <div className="flex flex-col gap-5">
-      <SectionLinks section="Featured Projects" linkLabel="See All Projects" />
+      <SectionLinks
+        section="Featured Projects"
+        linkLabel="See All Projects"
+        link="/projects"
+      />
       <div className="grid grid-cols-3 gap-7">
         {[...projects]
           .filter((proj) => proj.feature)
