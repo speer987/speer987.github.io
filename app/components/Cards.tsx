@@ -86,9 +86,9 @@ export function WorkCardHorizontal({
       <div>
         <div className="text-3xl font-serif">{role}</div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
-          <div className="flex flex-row gap-1">
+          <div className="flex lg:flex-row flex-col lg:gap-1">
             <div className="font-barlow font-medium uppercase">{company}</div>
-            <p>▪</p>
+            <p className="hidden lg:block">▪</p>
             <div className="font-barlow">{location}</div>
           </div>
           <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-l-2 border-[#f4e4cf]">

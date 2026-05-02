@@ -9,9 +9,11 @@ export default function Resume() {
         selectedProjects={false}
         selectedWork={false}
       />
-      <div className="pt-14">
-        <div className="flex flex-col py-25 px-30 gap-10 items-center justify-center">
-          <div className="text-5xl font-serif text-center">My Resume</div>
+      <div className="lg:pt-14 pt-44">
+        <div className="w-full flex flex-col lg:py-25 lg:px-30 gap-10 items-center justify-center">
+          <div className="lg:text-5xl text-4xl font-serif text-center">
+            My Resume
+          </div>
           <embed src="app/resumes/resume.pdf" width="900" height="1180" />
         </div>
         <Footer />

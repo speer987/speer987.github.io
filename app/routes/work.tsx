@@ -12,12 +12,12 @@ export default function Work() {
         selectedProjects={false}
         selectedWork={true}
       />
-      <div className="pt-14">
-        <div className="flex flex-col py-25 px-50 gap-10">
-          <div className="text-5xl font-serif text-center">
+      <div className="lg:pt-14 pt-40">
+        <div className="flex flex-col p-5 lg:py-25 lg:px-50 lg:gap-10 gap-8">
+          <div className="lg:text-5xl text-4xl font-serif text-center">
             All Work Experience & Mentorships
           </div>
-          <div className="flex flex-col gap-7">
+          <div className="flex flex-col lg:gap-7 gap-5">
             {work?.map((exp) => (
               <WorkCardHorizontal
                 key={exp?.role}
