@@ -2,14 +2,14 @@ export default function Hero() {
   return (
     <div className="divide-y divide-[#5b422a]">
       <div className="text-[#5b422a] bg-[#fbf6ee] pt-14">
-        <div className="divide-x divide-[#5b422a] flex flex-row">
-          <div className="w-1/2 flex flex-col gap-1 p-25 font-sans justify-center">
-            <p className="text-8xl font-serif">Saarah Peer</p>
-            <p className="text-2xl">
+        <div className="lg:divide-x divide-y lg:divide-y-0 divide-[#5b422a] flex lg:flex-row flex-col">
+          <div className="lg:w-1/2 flex flex-col gap-1 p-25 font-sans justify-center">
+            <p className="lg:text-8xl text-6xl font-serif">Saarah Peer</p>
+            <p className="lg:text-2xl text-xl">
               Software Developer passionate about data analytics and design.
             </p>
           </div>
-          <div className="w-1/2 flex flex-col gap-1 p-25">
+          <div className="lg:w-1/2 flex flex-col gap-1 p-25">
             <div className="text-5xl font-serif">About Me</div>
             <p className="font-sans text-lg">
               I'm a recent grad who recieved a B.S. in Computer Science with a

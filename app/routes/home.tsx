@@ -16,7 +16,7 @@ export default function Home() {
       {/* HERO SEGMENT */}
       <Hero />
       {/* WORK EXP SEGMENT */}
-      <div className="py-25 px-30 flex flex-col gap-20">
+      <div className="lg:py-25 lg:px-30 p-10 flex flex-col gap-20">
         <WorkExp />
         <Projects />
       </div>
