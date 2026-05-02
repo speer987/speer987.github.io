@@ -10,7 +10,7 @@ export default function Projects() {
         linkLabel="See All Projects"
         link="/projects"
       />
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-7">
+      <div className="grid xl:grid-cols-3 grid-cols-1 gap-7">
         {[...projects]
           .filter((proj) => proj.feature)
           .sort((a, b) => b.year - a.year) // sorts projects by descending order by comparing years. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort

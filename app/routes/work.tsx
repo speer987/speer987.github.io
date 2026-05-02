@@ -12,8 +12,8 @@ export default function Work() {
         selectedProjects={false}
         selectedWork={true}
       />
-      <div className="lg:pt-14 pt-40">
-        <div className="flex flex-col p-5 lg:py-25 lg:px-50 lg:gap-10 gap-8">
+      <div className="lg:pt-20 xl:pt-14 pt-40">
+        <div className="flex flex-col p-5 lg:p-10 xl:py-25 xl:px-45 xl:gap-10 gap-8">
           <div className="lg:text-5xl text-4xl font-serif text-center">
             All Work Experience & Mentorships
           </div>

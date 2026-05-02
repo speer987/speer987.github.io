@@ -46,9 +46,8 @@ export function WorkCard({
       <div>
         <div className="text-3xl font-serif">{role}</div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
-          <div className="flex lg:flex-row flex-col lg:gap-1">
+          <div className="flex flex-col">
             <div className="font-barlow font-medium uppercase">{company}</div>
-            <p className="lg:block hidden">▪</p>
             <div className="font-barlow">{location}</div>
           </div>
           {destination == "" ? (
@@ -63,7 +62,7 @@ export function WorkCard({
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative h-full">
         <InfoList destination={destination} sentence={sentence} />
       </div>
       {/* <InfoList /> */}
