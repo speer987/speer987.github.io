@@ -13,7 +13,17 @@ export default function Header({
   selectedName,
 }: props) {
   return (
-    <div className="flex justify-between p-2.5 fixed h-14 z-20 w-full bg-[#f5f1e8]/50 backdrop-blur-md items-center border-b border-[#5b422a]">
+    <div className="flex lg:flex-row flex-col justify-between p-2.5 fixed h-fit z-20 w-full bg-[#f5f1e8]/50 backdrop-blur-md items-center border-b border-[#5b422a]">
+      <Link
+        to="/"
+        className={
+          selectedName
+            ? "lg:hidden text-center text-lg p-2 font-barlow tracking-widest uppercase  text-[#f5f1e8] font-semibold bg-[#5b422a] decoration-2 underline-offset-4"
+            : "lg:hidden text-center text-lg p-2 font-barlow uppercase  tracking-widest font-semibold text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out"
+        }
+      >
+        Saarah Peer
+      </Link>
       <div className="flex flex-1">
         <Link
           to="/projects"
@@ -46,7 +56,7 @@ export default function Header({
           Resume
         </Link>
       </div>
-      <div className="p-2.5">
+      <div className="lg:block hidden p-2.5">
         <Link
           to="/"
           className={

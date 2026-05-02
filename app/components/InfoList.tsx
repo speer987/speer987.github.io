@@ -16,7 +16,7 @@ export default function InfoListSent({ sentence, destination }: props) {
 
       {destination !== "" ? (
         <Link
-          className="absolute bottom-0 right-0 z-10 font-barlow uppercase
+          className="lg:absolute bottom-0 right-0 z-10 font-barlow uppercase
       font-medium text-center text-[#5b422a] hover:underline  hover:text-[#A8794D] decoration-2 underline-offset-4 transition-all duration-300 ease-in-out"
           to={destination}
         >

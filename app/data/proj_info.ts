@@ -75,7 +75,7 @@ const projects = [
     {
       feature: true,
       project: "React Book Wishlist/Tracking Web App (The Book Nook)",
-      category: "Web App Development & UI Design",
+      category: "Web App Development & UI",
       // monthYear: "Aug 2023 - Dec 2023",
       year: 2023,
       img: "app/imgs/filler.jpg",
@@ -191,7 +191,7 @@ const projects = [
   },
   {
     project: "React Nutrition Web App",
-    category: "Web App Development and UI Design",
+    category: "Web App Development & UI",
     year: 2022,
     sentence:
       "Worked alongside teammates to develop a React app that lets users search, generate, and favorite recipes with nutritional details using Firestore and Spoonacular API.",
@@ -222,7 +222,7 @@ const projects = [
   },
     {
     project: "React Country Data Finder Web App",
-    category: "Web App Development and UI Design",
+    category: "Web App Development & UI",
     year: 2022,
     sentence:
       "Developed a React app to fetch and display detailed country information with a responsive, accessible interface using the Rest Countries API.",
@@ -252,7 +252,7 @@ const projects = [
     },
     {
     project: "Rose Hack Hydroponics Website",
-    category: "Web App Development and UI Design",
+    category: "Web App Development & UI",
     year: 2021,
     sentence:
       "Contributed to the front-end development of a hydroponics education web app, focusing on HTML/CSS and user-friendly UI design.",

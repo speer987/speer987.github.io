@@ -42,13 +42,13 @@ export function WorkCard({
   destination,
 }: workCardProps) {
   return (
-    <div className="relative flex flex-col bg-[#fbf6ee] border-2 border-[#f4e4cf] p-10 gap-1.5">
+    <div className="relative flex flex-col bg-[#fbf6ee] border-2 border-[#f4e4cf] p-8 lg:p-10 gap-1.5">
       <div>
         <div className="text-3xl font-serif">{role}</div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
-          <div className="flex flex-row gap-1">
+          <div className="flex lg:flex-row flex-col lg:gap-1">
             <div className="font-barlow font-medium uppercase">{company}</div>
-            <p>▪</p>
+            <p className="lg:block hidden">▪</p>
             <div className="font-barlow">{location}</div>
           </div>
           {destination == "" ? (
@@ -134,11 +134,11 @@ export function ProjCard({
           {category}
         </p>
         <img
-          className="h-72 w-full object-cover z-0"
+          className="lg:h-72 h-52 w-full object-cover z-0"
           src="app/imgs/filler.jpg"
         />
       </div>
-      <div className="bg-[#fbf6ee] p-10 flex flex-col gap-5 flex-1">
+      <div className="bg-[#fbf6ee] lg:p-10 p-8 flex flex-col gap-5 flex-1">
         <div className="gap-3">
           <div>
             <h1 className="font-serif text-3xl text-center">{title}</h1>
@@ -171,12 +171,14 @@ export function ProjCardHorizontal({
   return (
     <div className="flex flex-row divide-x divide-[#e8d4b6] border-2 border-[#e8d4b6]">
       <div className="relative w-full flex flex-col divide-y divide-[#e8d4b6]">
-        <div className="bg-[#fbf6ee] flex flex-col p-10 gap-2.5 flex-1">
+        <div className="bg-[#fbf6ee] flex flex-col lg:p-10 p-8 pt-12 gap-2.5 flex-1">
           <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
             {category}
           </p>
           <div>
-            <h1 className="font-serif text-4xl text-center">{title}</h1>
+            <h1 className="font-serif lg:text-4xl text-3xl text-center">
+              {title}
+            </h1>
             <p className="text-center font-barlow uppercase font-medium">
               {monthYear}
             </p>

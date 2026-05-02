@@ -12,9 +12,11 @@ export default function Project() {
         selectedProjects={true}
         selectedWork={false}
       />
-      <div className="pt-14">
-        <div className="flex flex-col py-25 px-50 gap-10">
-          <div className="text-5xl font-serif text-center">All Projects</div>
+      <div className="lg:pt-14 pt-36">
+        <div className="flex flex-col p-10 lg:py-25 lg:px-50 lg:gap-10 gap-8">
+          <div className="lg:text-5xl text-4xl font-serif text-center">
+            All Projects
+          </div>
           <div className="flex flex-col gap-10">
             {[...projects] // ... makes a copy of the array so sort doesn't mutate the original list.
               .sort((a, b) => b.year - a.year) // sorts projects by descending order by comparing years. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
