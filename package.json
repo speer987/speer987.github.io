@@ -6,7 +6,8 @@
   "scripts": {
     "build": "react-router build",
     "deploy": "gh-pages -d build/client",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "dev": "react-router dev"
   },
   "dependencies": {
     "@react-router/node": "7.14.0",

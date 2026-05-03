@@ -7,9 +7,12 @@ export default function MobileMenu() {
   return (
     <div className="lg:hidden">
       <div className="flex flex-row justify-between p-2.5 fixed h-fit z-20 w-full bg-light-beige/50 backdrop-blur-md items-center border-b border-dark-brown ">
-        <div className="text-center text-lg p-2 font-barlow uppercase tracking-widest font-semibold text-dark-brown hover:underline">
+        <Link
+          to="/"
+          className="text-center text-lg p-2 font-barlow uppercase tracking-widest font-semibold text-dark-brown hover:underline"
+        >
           Saarah Peer
-        </div>
+        </Link>
         {/* Hamburger button */}
         <button className="p-2" onClick={() => setIsOpen(true)}>
           ☰
