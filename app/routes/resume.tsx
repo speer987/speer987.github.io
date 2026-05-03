@@ -1,5 +1,6 @@
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
+import MobileMenu from "~/components/MobileMenu";
 export default function Resume() {
   return (
     <div className="divide-y divide-[#5b422a] text-[#5b422a]">
@@ -9,8 +10,9 @@ export default function Resume() {
         selectedProjects={false}
         selectedWork={false}
       />
-      <div className="lg:pt-14 pt-44">
-        <div className="w-full flex flex-col lg:py-25 lg:px-30 gap-10 items-center justify-center">
+      <MobileMenu />
+      <div className="lg:pt-20 xl:pt-14 pt-20">
+        <div className="flex flex-col p-5 lg:p-10 xl:py-25 xl:px-45 xl:gap-10 gap-8">
           <div className="lg:text-5xl text-4xl font-serif text-center">
             My Resume
           </div>

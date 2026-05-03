@@ -2,6 +2,7 @@ import { ProjCardHorizontal } from "~/components/Cards";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import projects from "../data/proj_info";
+import MobileMenu from "~/components/MobileMenu";
 
 export default function Project() {
   return (
@@ -12,7 +13,8 @@ export default function Project() {
         selectedProjects={true}
         selectedWork={false}
       />
-      <div className="lg:pt-20 xl:pt-14 pt-40">
+      <MobileMenu />
+      <div className="lg:pt-20 xl:pt-14 pt-20">
         <div className="flex flex-col p-5 lg:p-10 xl:py-25 xl:px-45 xl:gap-10 gap-8">
           <div className="lg:text-5xl text-4xl font-serif text-center">
             All Projects

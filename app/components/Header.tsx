@@ -13,7 +13,7 @@ export default function Header({
   selectedName,
 }: props) {
   return (
-    <div className="flex lg:flex-row flex-col justify-between p-2.5 fixed h-fit z-20 w-full bg-[#f5f1e8]/50 backdrop-blur-md items-center border-b border-[#5b422a]">
+    <div className="hidden lg:flex lg:flex-row flex-col justify-between p-2.5 fixed h-fit z-20 w-full bg-[#f5f1e8]/50 backdrop-blur-md items-center border-b border-[#5b422a]">
       <Link
         to="/"
         className={

@@ -3,6 +3,7 @@ import Projects from "~/components/Projects";
 import WorkExp from "~/components/WorkExp";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
+import MobileMenu from "~/components/MobileMenu";
 export default function Home() {
   return (
     <div className="text-[#5b422a]">
@@ -13,6 +14,7 @@ export default function Home() {
         selectedProjects={false}
         selectedWork={false}
       />
+      <MobileMenu />
       {/* HERO SEGMENT */}
       <Hero />
       {/* WORK EXP SEGMENT */}
