@@ -18,9 +18,9 @@ export default function Resume() {
             <div className="lg:text-5xl text-4xl font-serif text-center">
               My Resume
             </div>
-            <Button link="app/resumes/resume.pdf" linkLabel="Download Resume" />
+            <Button link="/resumes/resume.pdf" linkLabel="Download Resume" />
           </div>
-          <img className="border-2" src="app/imgs/resume.png" />
+          <img className="border-2" src="/imgs/resume.png" />
         </div>
         <Footer />
       </div>
