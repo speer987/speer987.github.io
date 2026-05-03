@@ -25,7 +25,7 @@ export default function SkillPills({ centeredText, skills }: props) {
         <p className="font-barlow uppercase font-medium">Skills Used</p>
       )}
 
-      <div>{skills?.join(" ▪ ")}</div>
+      <div>{skills?.join(" • ")}</div>
       {/* {skills?.length > 0 && (
         <ul className="justify-center flex flex-row gap-1 flex-wrap font-barlow uppercase tracking-wide">
           {skills?.map((skill) => (
