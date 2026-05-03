@@ -6,7 +6,7 @@ export default function Hero() {
           <div className="lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10 font-sans justify-center">
             <p className="lg:text-8xl text-6xl font-serif">Saarah Peer</p>
             <p className="lg:text-2xl text-xl">
-              Software Development ▪ Analytics ▪ Design.
+              Software Development ▪ Analytics ▪ Design
             </p>
           </div>
           <div className="lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10">
