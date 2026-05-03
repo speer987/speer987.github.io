@@ -42,7 +42,7 @@ const projects = [
     feature: true,
     project: "Marketplace Mobile App",
     category: "Mobile App & UI Design",
-    monthYear: "Jan 2024 - Aug 2024",
+    monthYear: "Jan 2024 - May 2024",
     year: 2024,
     img: "app/imgs/unibuy.png",
     sentence: "A React Native marketplace app for Loyola Marymount University students to list, browse, and favorite items with secure account management and authentication.",
@@ -68,9 +68,9 @@ const projects = [
     },
     {
       feature: true,
-      project: "React Book Wishlist/Tracking Web App (The Book Nook)",
+      project: "Book Tracking Web App",
       category: "Web App Development & UI",
-      // monthYear: "Aug 2023 - Dec 2023",
+      monthYear: "Aug 2023 - Dec 2023",
       year: 2023,
       img: "app/imgs/book_nook.png",
       sentence: "A React web app that lets users search, track, and organize books into virtual bookshelves using external APIs and progress tracking.",
@@ -240,6 +240,7 @@ const projects = [
     ],
     
     links: {
+      readme: "https://github.com/speer987/react-country-finder/blob/f15cbbb1acab3552d5e91eb84aa162eca061b608/README.md",
       code : "https://github.com/speer987/react-country-finder", 
       "codesandbox demo": "https://codesandbox.io/p/sandbox/react-country-data-finder-q839ng?file=%2Fsrc%2Findex.js", 
       "github pages demo": "https://speer987.github.io/react-country-finder/"}

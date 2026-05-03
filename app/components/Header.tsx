@@ -91,34 +91,5 @@ export default function Header({
         </Link>
       </div>
     </div>
-
-    // <div className=" w-full justify-between font-barlow bg-light-beige fixed top-0 z-20">
-    //   <div className="divide-x border-r text-center justify-center">
-    //     <Link
-    //       to="/"
-    //       className="text-center justify-center p-2 flex-row font-serif text-4xl hover:bg-dark-beige hover:text-dark-brown transition duration-300 ease-in-out"
-    //     >
-    //       Saarah Peer
-    //     </Link>
-    //     <Link
-    //       to="/projects"
-    //       className="text-center justify-center p-2 flex-row hover:bg-dark-beige hover:text-dark-brown transition duration-300 ease-in-out"
-    //     >
-    //       Projects
-    //     </Link>
-    //     <Link
-    //       to="/work"
-    //       className="text-center justify-center flex-row uppercase hover:bg-dark-beige hover:text-dark-brown transition duration-300 ease-in-out"
-    //     >
-    //       Work Experience
-    //     </Link>
-    //     <Link
-    //       to="/resume"
-    //       className="text-center justify-center flex-row uppercase hover:bg-dark-beige hover:text-dark-brown transition duration-300 ease-in-out"
-    //     >
-    //       Resume
-    //     </Link>
-    //   </div>
-    // </div>
   );
 }
