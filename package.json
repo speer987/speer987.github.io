@@ -1,12 +1,12 @@
 {
   "name": "new-portfolio",
-  "homepage":"speer987.github.io",
+  "homepage": "speer987.github.io",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "react-router build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build/client"
+    "deploy": "gh-pages -d build/client",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@react-router/node": "7.14.0",
