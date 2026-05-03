@@ -124,6 +124,7 @@ export function ProjCard({
   skills,
   links,
   sentence,
+  img,
 }: projCardProps) {
   console.log(skills);
   return (
@@ -132,10 +133,7 @@ export function ProjCard({
         <p className="absolute right-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-l-2 border-[#f4e4cf]">
           {category}
         </p>
-        <img
-          className="lg:h-72 h-52 w-full object-cover z-0"
-          src="app/imgs/filler.jpg"
-        />
+        <img className="aspect-video w-full object-cover z-0" src={img} />
       </div>
       <div className="bg-[#fbf6ee] lg:p-10 p-8 flex flex-col gap-5 flex-1">
         <div className="gap-3">

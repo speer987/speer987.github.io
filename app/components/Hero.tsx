@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="divide-y divide-[#5b422a]">
-      <div className="text-[#5b422a] bg-[#fbf6ee] pt-15 xl:pt-36">
+      <div className="text-[#5b422a] bg-[#fbf6ee] pt-15 xl:pt-15">
         <div className="lg:divide-x divide-y lg:divide-y-0 divide-[#5b422a] flex lg:flex-row flex-col">
           <div className="lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10 font-sans justify-center">
             <p className="lg:text-8xl text-6xl font-serif">Saarah Peer</p>

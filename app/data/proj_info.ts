@@ -5,7 +5,7 @@ const projects = [
     category: "Full Stack & AI",
     monthYear: "Jan 2026",
     year: 2026,
-    img: "",
+    img: "app/imgs/smart_planner.png",
     sentence:
       "An AI-powered planning app that turns high-level goals into structured quarterly, monthly, and weekly plans using the Gemini API.",
     desc: [
@@ -44,7 +44,7 @@ const projects = [
     category: "Mobile App & UI Design",
     monthYear: "Jan 2024 - Aug 2024",
     year: 2024,
-    img: "app/imgs/filler.jpg",
+    img: "app/imgs/unibuy.png",
     sentence: "A React Native marketplace app for Loyola Marymount University students to list, browse, and favorite items with secure account management and authentication.",
      desc: [
       "Collaborated with a business student to define requirements and core user flows, aligning product design with user needs",
@@ -65,12 +65,6 @@ const projects = [
         "Git",
         "Github",
       ],
-      links: {
-      code: "https://github.com/speer987/smart-planner",
-      readme:
-        "https://github.com/speer987/smart-planner/blob/a0861a430a2a89c3df3a66f4b182f9734428c296/README.md",
-      demo: "https://smart-planner-ai.vercel.app/",
-    },
     },
     {
       feature: true,
@@ -78,7 +72,7 @@ const projects = [
       category: "Web App Development & UI",
       // monthYear: "Aug 2023 - Dec 2023",
       year: 2023,
-      img: "app/imgs/filler.jpg",
+      img: "app/imgs/book_nook.png",
       sentence: "A React web app that lets users search, track, and organize books into virtual bookshelves using external APIs and progress tracking.",
       desc: [
       "Built a full-stack React application for managing personal reading lists using Firestore-backed shelves",  

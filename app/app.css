@@ -8,6 +8,13 @@
 */
 
 @theme {
+  --caramel: #d6b98c;
+  --light-brown: #f5f1e8;
+  --dark-brown: #5b422a;
+  --dark-beige: #e8d4b6;
+}
+
+@theme {
   --font-barlow: "Barlow", sans-serif;
   --font-serif: "Instrument Serif", serif;
   --font-sans: "Instrument Sans", sans-serif;
