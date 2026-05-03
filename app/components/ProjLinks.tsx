@@ -16,7 +16,7 @@ type Links = {
 export default function ProjLinks({ links }: props) {
   // console.log(links);
   return (
-    <ul className="flex md:flex-row flex-col justify-between font-barlow uppercase md:divide-x divide-dark-beige">
+    <ul className="flex divide-y md:flex-row flex-col justify-between font-barlow uppercase md:divide-y-0 md:divide-x divide-dark-beige">
       {links
         ? Object.entries(links).map(([source, link]) => (
             <Link
