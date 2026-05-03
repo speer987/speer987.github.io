@@ -6,8 +6,8 @@ export default function MobileMenu() {
 
   return (
     <div className="lg:hidden">
-      <div className="flex flex-row justify-between p-2.5 fixed h-fit z-20 w-full bg-[#f5f1e8]/50 backdrop-blur-md items-center border-b border-[#5b422a] ">
-        <div className="text-center text-lg p-2 font-barlow uppercase tracking-widest font-semibold text-[#5b422a] hover:underline">
+      <div className="flex flex-row justify-between p-2.5 fixed h-fit z-20 w-full bg-light-beige/50 backdrop-blur-md items-center border-b border-dark-brown ">
+        <div className="text-center text-lg p-2 font-barlow uppercase tracking-widest font-semibold text-dark-brown hover:underline">
           Saarah Peer
         </div>
         {/* Hamburger button */}
@@ -26,7 +26,7 @@ export default function MobileMenu() {
 
       {/* Sidebar */}
       <div
-        className={`border-l border-[#5b422a] fixed top-0 right-0 h-full w-64 bg-[#fbf6ee] z-50 transform transition-transform duration-300 ${
+        className={`border-l border-dark-brown fixed top-0 right-0 h-full w-64 bg-light-beige z-50 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

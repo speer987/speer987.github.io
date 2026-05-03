@@ -6,7 +6,7 @@ import Footer from "~/components/Footer";
 import MobileMenu from "~/components/MobileMenu";
 export default function Home() {
   return (
-    <div className="text-[#5b422a]">
+    <div className="text-dark-brown">
       {/* HEADER / LINK BAR */}
       <Header
         selectedName={true}

@@ -14,9 +14,9 @@ type Links = {
 };
 
 export default function ProjLinks({ links }: props) {
-  console.log(links);
+  // console.log(links);
   return (
-    <ul className="flex md:flex-row flex-col justify-between font-barlow uppercase md:divide-x divide-[#f4e4cf]">
+    <ul className="flex md:flex-row flex-col justify-between font-barlow uppercase md:divide-x divide-dark-beige">
       {links
         ? Object.entries(links).map(([source, link]) => (
             <Link
@@ -24,7 +24,7 @@ export default function ProjLinks({ links }: props) {
               to={link}
               target="_blank"
               className="cursor-pointer flex-1 p-1.5 text-center font-medium
-          text-[#fbf6ee] bg-[#A8794D] hover:bg-[#5b422a] transition ease-in-out
+          text-light-beige bg-caramel hover:bg-dark-brown transition ease-in-out
           duration-300"
             >
               {source}

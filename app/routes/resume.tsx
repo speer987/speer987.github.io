@@ -4,7 +4,7 @@ import MobileMenu from "~/components/MobileMenu";
 import Button from "~/components/Button";
 export default function Resume() {
   return (
-    <div className="divide-y divide-[#5b422a] text-[#5b422a]">
+    <div className="divide-y divide-dark-brown text-dark-brown">
       <Header
         selectedName={false}
         selectedResume={true}

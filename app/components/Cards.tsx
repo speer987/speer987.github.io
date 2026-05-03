@@ -42,7 +42,7 @@ export function WorkCard({
   destination,
 }: workCardProps) {
   return (
-    <div className="relative flex flex-col bg-[#fbf6ee] border-2 border-[#f4e4cf] p-8 lg:p-10 gap-1.5">
+    <div className="relative flex flex-col bg-light-beige border-2 border-dark-beige p-8 lg:p-10 gap-1.5">
       <div>
         <div className="text-3xl font-serif">{role}</div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
@@ -51,11 +51,11 @@ export function WorkCard({
             <div className="font-barlow">{location}</div>
           </div>
           {destination == "" ? (
-            <div className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-r-2 border-b-2 border-[#f4e4cf]">
+            <div className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-r-2 border-b-2 border-dark-beige">
               {date}
             </div>
           ) : (
-            <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-l-2 border-[#f4e4cf]">
+            <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-l-2 border-dark-beige">
               {date}
             </div>
           )}
@@ -81,7 +81,7 @@ export function WorkCardHorizontal({
   desc,
 }: workCardProps) {
   return (
-    <div className="relative flex flex-col bg-[#fbf6ee] border-2 border-[#f4e4cf] p-10 gap-1.5">
+    <div className="relative flex flex-col bg-light-beige border-2 border-dark-beige p-10 gap-1.5">
       <div>
         <div className="text-3xl font-serif">{role}</div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
@@ -90,7 +90,7 @@ export function WorkCardHorizontal({
             <p className="hidden lg:block">▪</p>
             <div className="font-barlow">{location}</div>
           </div>
-          <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-l-2 border-[#f4e4cf]">
+          <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-l-2 border-dark-beige">
             {date}
           </div>
         </div>
@@ -126,16 +126,16 @@ export function ProjCard({
   sentence,
   img,
 }: projCardProps) {
-  console.log(skills);
+  // console.log(skills);
   return (
-    <div className="h-full flex flex-col divide-y divide-[#f4e4cf] border-2 border-[#f4e4cf]">
+    <div className="h-full flex flex-col divide-y divide-dark-beige border-2 border-dark-beige">
       <div className="relative">
-        <p className="absolute right-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-l-2 border-[#f4e4cf]">
+        <p className="absolute right-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-l-2 border-dark-beige">
           {category}
         </p>
         <img className="aspect-video w-full object-cover z-0" src={img} />
       </div>
-      <div className="bg-[#fbf6ee] lg:p-10 p-8 flex flex-col gap-5 flex-1">
+      <div className="bg-light-beige lg:p-10 p-8 flex flex-col gap-5 flex-1">
         <div className="gap-3">
           <div>
             <h1 className="font-serif text-3xl text-center">{title}</h1>
@@ -164,12 +164,12 @@ export function ProjCardHorizontal({
   img,
   sentence,
 }: projCardProps) {
-  console.log(skills);
+  // console.log(skills);
   return (
-    <div className="flex flex-row divide-x divide-[#e8d4b6] border-2 border-[#e8d4b6]">
-      <div className="relative w-full flex flex-col divide-y divide-[#e8d4b6]">
-        <div className="bg-[#fbf6ee] flex flex-col lg:p-10 p-8 pt-12 gap-2.5 flex-1">
-          <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
+    <div className="flex flex-row divide-x divide-dark-beige border-2 border-dark-beige">
+      <div className="relative w-full flex flex-col divide-y divide-dark-beige">
+        <div className="bg-light-beige flex flex-col lg:p-10 p-8 pt-12 gap-2.5 flex-1">
+          <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-r-2 border-dark-beige">
             {category}
           </p>
           <div>
@@ -199,10 +199,10 @@ export function ProjCardHorizontal({
   );
 }
 
-// <div className="flex flex-row divide-x divide-[#e8d4b6] border-2 border-[#e8d4b6]">
+// <div className="flex flex-row divide-x divide-dark-beige border-2 border-dark-beige">
 //   <div className={`relative ${img ? "w-2/6" : ""}`}>
 //     {img ? (
-//       <p className="absolute left-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
+//       <p className="absolute left-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-r-2 border-dark-beige">
 //         {category}
 //       </p>
 //     ) : (
@@ -211,14 +211,14 @@ export function ProjCardHorizontal({
 //     {img ? <img className="object-cover w-full z-0" src={img} /> : ""}
 //   </div>
 //   <div
-//     className={`relative ${img ? "w-4/6" : "w-full"} flex flex-col divide-y divide-[#e8d4b6]`}
+//     className={`relative ${img ? "w-4/6" : "w-full"} flex flex-col divide-y divide-dark-beige`}
 //   >
-//     <div className="bg-[#fbf6ee] flex flex-col p-10 gap-2.5 flex-1">
+//     <div className="bg-light-beige flex flex-col p-10 gap-2.5 flex-1">
 //       <div>
 //         {img ? (
 //           ""
 //         ) : (
-//           <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-[#fbf6ee] px-2 py-1 border-b-2 border-r-2 border-[#e8d4b6]">
+//           <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-r-2 border-dark-beige">
 //             {category}
 //           </p>
 //         )}

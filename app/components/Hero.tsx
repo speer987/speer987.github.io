@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
-    <div className="divide-y divide-[#5b422a]">
-      <div className="text-[#5b422a] bg-[#fbf6ee] pt-15 xl:pt-15">
-        <div className="lg:divide-x divide-y lg:divide-y-0 divide-[#5b422a] flex lg:flex-row flex-col">
+    <div className="divide-y divide-dark-brown">
+      <div className="text-dark-brown bg-light-beige pt-15 xl:pt-15">
+        <div className="lg:divide-x divide-y lg:divide-y-0 divide-dark-brown flex lg:flex-row flex-col">
           <div className="lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10 font-sans justify-center">
             <p className="lg:text-8xl text-6xl font-serif">Saarah Peer</p>
             <p className="lg:text-2xl text-xl">
@@ -23,7 +23,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center -mt-4">
-        <div className="border border-[#5b422a] animate-bounce text-[#5b422a] bg-[#fbf6ee] flex items-center justify-center p-2 h-12 w-12">
+        <div className="border border-dark-brown animate-bounce text-dark-brown bg-light-beige flex items-center justify-center p-2 h-12 w-12">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
