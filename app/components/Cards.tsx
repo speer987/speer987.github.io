@@ -102,7 +102,7 @@ export function WorkCardHorizontal({
 
       <div>
         {desc?.length > 0 && (
-          <ul className="list-disc list-inside">
+          <ul className="list-[square] list-inside">
             {desc?.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -184,7 +184,7 @@ export function ProjCardHorizontal({
           {/* <p>{desc}</p> */}
           <div>
             {desc?.length > 0 && (
-              <ul className="list-disc list-inside">
+              <ul className="list-[square] list-inside">
                 {desc?.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
