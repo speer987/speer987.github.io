@@ -6,15 +6,18 @@ export default function Hero() {
           <div className="lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10 font-sans justify-center">
             <p className="lg:text-8xl text-6xl font-serif">Saarah Peer</p>
             <p className="lg:text-2xl text-xl">
-              Software Developer passionate about data analytics and design.
+              Software Development ▪ Analytics ▪ Design.
             </p>
           </div>
           <div className="lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10">
             <div className="text-5xl font-serif">About Me</div>
             <p className="font-sans text-lg">
-              I'm a recent grad who recieved a B.S. in Computer Science with a
-              Minor in Statistics and Data Science at Loyola Marymount
-              University in Los Angeles, California. <br />
+              I'm a recent grad who received a{" "}
+              <b className="font-semibold">
+                B.S. in Computer Science with a Minor in Statistics and Data
+                Science
+              </b>{" "}
+              at Loyola Marymount University in Los Angeles, California. <br />
               <br /> I love developing minimal user interfaces for mobile and
               web apps (like this one), and finding business insights from
               datasets.
