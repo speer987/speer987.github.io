@@ -4,12 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "react-router dev",
-    "build": "react-router build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build/client",
-    "typecheck": "react-router typegen && tsc"
-  },
+    "deploy": "gh-pages -d dist"
+  }, 
   "dependencies": {
     "@react-router/node": "7.14.0",
     "@react-router/serve": "7.14.0",
