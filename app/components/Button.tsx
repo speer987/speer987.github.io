@@ -10,7 +10,7 @@ export default function Button({ link, linkLabel }: props) {
     <a
       href={link}
       target="_blank"
-      download="saarah_peer_resume_2026.pdf"
+      // download="saarah_peer_resume_2026.pdf"
       className="w-fit cursor-pointer font-barlow uppercase text-lg border-2 border-dark-beige text-light-beige bg-caramel hover:bg-dark-brown transition duration-300 ease-in-out px-2 py-1 font-medium"
     >
       {linkLabel}
