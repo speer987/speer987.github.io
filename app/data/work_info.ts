@@ -1,5 +1,17 @@
 const work = [
   {
+    company: "Develop for Good",
+    role: "Designer",
+    sentence:
+      "In progress",
+    desc: [
+      "In progress",
+    ],
+    monthYear: "May 2026 - Present",
+    year: 2026,
+    location: "Los Angeles, California (Remote U.S.)",
+  },
+  {
     company: "Loyola Marymount University",
     role: "CMSI 3802 Student Teaching Assistant",
     sentence:
@@ -18,7 +30,7 @@ const work = [
       "Selected as one of 86 undergraduate students in the U.S. to join a competitive five-month data science apprenticeship which included mock interviews, a large data science project, technical workshops/webinars, group mentorship and a SQL class.",
     monthYear: "Summer 2022",
     year: 2022,
-    location: "Los Angeles, California",
+    location: "Los Angeles, California (Remote U.S.)",
     desc: [
       "Completed a five-month data science apprenticeship with Meta, gaining hands-on experience in SQL, Python, technical workshops, and collaborative mentorship.",
       "Met with mentors (a Meta Data Scientist and Data Engineer) periodically to present insights gained from data exploration and obtain meaningful feedback on potential product pitch improvements.",
@@ -32,7 +44,7 @@ const work = [
       "Completed a prestigious 4-week computer science program for high-achieving students, gaining foundational skills in JavaScript and creative coding prior to college.",
     monthYear: "Summer 2021",
     year: 2021,
-    location: "Los Angeles, California (Online)",
+    location: "Los Angeles, California (Remote U.S.)",
     desc: [
       "Participated in an in-depth 4-week computer science program for high-achieving students.",
       "Completed an introductory project-based JavaScript processing and creative coding curriculum taught by Google Engineers and LMU faculty to learn about functions, data types, objects, and 3D graphics.",
