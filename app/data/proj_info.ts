@@ -1,5 +1,22 @@
 const projects = [
   {
+    feature: false,
+    project: "EV Business & Market Analysis",
+    category: "Full Stack & AI",
+    monthYear: "Jan 2026",
+    year: 2026,
+    img: "/imgs/smart_planner.png",
+    sentence:
+      "In Progress",
+    desc: [
+      "In Progress"
+    ],
+    stack: ["Data Cleaning", "ETL/ELT", "Pandas", "Python", "Jupyter Notebook", "Seaborn", "Matplotlib", "Plotly", "DuckDB", "SQL", "GitHub"],
+    links: {
+      
+    },
+  },
+  {
     feature: true,
     project: "AI Planner Web Application",
     category: "Full Stack & AI",
