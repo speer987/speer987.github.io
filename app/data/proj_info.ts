@@ -3,7 +3,7 @@ const projects = [
     feature: false,
     project: "EV Business & Market Analysis",
     category: "Business & Data Analytics",
-    monthYear: "April 2026",
+    monthYear: "April 2026 - Present",
     year: 2026,
     img: "/imgs/smart_planner.png",
     sentence:
