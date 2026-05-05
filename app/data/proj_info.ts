@@ -228,8 +228,6 @@ const projects = [
       "Communication Skills",
       "Presentation Skills",
     ],
-    links:{ code: "https://github.com/joanna-estrada/nutrition", readme: "https://github.com/joanna-estrada/nutrition/blob/b3666b881c75463a2b1badf6c32d5e235785a5e0/README.md"
-}
   },
     {
     project: "React Country Data Finder Web App",
