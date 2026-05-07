@@ -3,15 +3,17 @@ export default function Hero() {
     <div className="divide-y divide-dark-brown">
       <div className="text-dark-brown bg-light-beige pt-15 xl:pt-15">
         <div className="lg:divide-x divide-y lg:divide-y-0 divide-dark-brown flex lg:flex-row flex-col">
-          <div className="lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10 font-sans justify-center">
-            <p className="lg:text-8xl text-6xl font-serif">Saarah Peer</p>
+          <div className="lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10 font-body justify-center">
+            <p className="lg:text-7xl text-6xl font-heading font-bold">
+              Saarah Peer
+            </p>
             <p className="lg:text-2xl text-xl">
               Software Development • Analytics • Design
             </p>
           </div>
           <div className="lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10">
-            <div className="text-5xl font-serif">About Me</div>
-            <p className="font-sans text-lg">
+            <div className="text-5xl font-heading font-semibold ">About Me</div>
+            <p className="font-body text-lg">
               I'm a recent grad who received a{" "}
               <b className="font-semibold">
                 B.S. in Computer Science with a Minor in Statistics and Data

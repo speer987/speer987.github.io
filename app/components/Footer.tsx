@@ -4,8 +4,10 @@ export default function Footer() {
     <div className="divide-y divide-dark-brown">
       <div className="text-dark-brown bg-light-beige border-t border-dark-brown">
         <div className="lg:divide-x divide-dark-brown flex lg:flex-row flex-col">
-          <div className="hidden lg:block lg:w-1/3 flex-col gap-1 py-12 lg:px-10 xl:px-25 font-sans text-center justify-center">
-            <div className="font-serif text-4xl">Navigation</div>
+          <div className="hidden lg:block lg:w-1/3 flex-col gap-1 py-12 lg:px-10 xl:px-25 font-body text-center justify-center">
+            <div className="font-heading font-semibold  text-3xl">
+              Navigation
+            </div>
             <div className="flex flex-col gap-1">
               <Link
                 to="/projects"
@@ -27,17 +29,19 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="lg:w-1/3 flex flex-col gap-1 py-12  font-sans text-center justify-center">
+          <div className="lg:w-1/3 flex flex-col gap-1 py-12  font-body text-center justify-center">
             <Link
               to="/"
-              className="justify-center font-serif text-5xl text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition duration-300 ease-in-out"
+              className="justify-center font-heading font-semibold  text-4xl text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition duration-300 ease-in-out"
             >
               Saarah Peer
             </Link>
             <div>This site was made with ❤️ and React</div>
           </div>
-          <div className="hidden lg:block lg:w-1/3 flex-col gap-1 py-12 lg:px-10 xl:px-25 font-sans text-center justify-center">
-            <div className="font-serif text-4xl">Stay Connected</div>
+          <div className="hidden lg:block lg:w-1/3 flex-col gap-1 py-12 lg:px-10 xl:px-25 font-body text-center justify-center">
+            <div className="font-heading font-semibold  text-3xl">
+              Stay Connected
+            </div>
             <div className="flex flex-col gap-1">
               <Link
                 to="https://github.com/speer987"

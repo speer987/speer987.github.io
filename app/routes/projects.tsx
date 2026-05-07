@@ -16,7 +16,7 @@ export default function Project() {
       <MobileMenu />
       <div className="lg:pt-20 xl:pt-14 pt-20">
         <div className="flex flex-col p-5 lg:p-10 xl:py-25 xl:px-45 xl:gap-10 gap-8">
-          <div className="lg:text-5xl text-4xl font-serif text-center">
+          <div className="lg:text-4xl text-3xl font-heading font-semibold  text-center">
             All Projects
           </div>
           <div className="flex flex-col lg:gap-10 gap-5">

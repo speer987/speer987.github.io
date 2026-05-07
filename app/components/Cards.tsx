@@ -42,20 +42,22 @@ export function WorkCard({
   destination,
 }: workCardProps) {
   return (
-    <div className="relative flex flex-col bg-light-beige border-2 border-dark-beige p-8 lg:p-10 gap-1.5">
+    <div className="relative flex flex-col border-neutral-100 border shadow-lg rounded-lg p-8 lg:p-10 gap-1.5">
       <div>
-        <div className="text-3xl font-serif">{role}</div>
+        <div className="lg:text-2xl text-1xl font-heading font-medium ">
+          {role}
+        </div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
           <div className="flex flex-col">
             <div className="font-barlow font-medium uppercase">{company}</div>
             <div className="font-barlow">{location}</div>
           </div>
           {destination == "" ? (
-            <div className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-r-2 border-b-2 border-dark-beige">
+            <div className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-r border-b rounded-bl-lg rounded-tr-lg">
               {date}
             </div>
           ) : (
-            <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-l-2 border-dark-beige">
+            <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-b border-l rounded-bl-lg rounded-tr-lg">
               {date}
             </div>
           )}
@@ -81,16 +83,18 @@ export function WorkCardHorizontal({
   desc,
 }: workCardProps) {
   return (
-    <div className="relative flex flex-col bg-light-beige border-2 border-dark-beige p-10 gap-1.5">
+    <div className="relative flex flex-col divide-neutral-100 border-neutral-100 border shadow-lg rounded-lg overflow-hidden p-10 gap-1.5">
       <div>
-        <div className="text-3xl font-serif">{role}</div>
+        <div className="lg:text-3xl text-2xl font-heading font-medium ">
+          {role}
+        </div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
           <div className="flex lg:flex-row flex-col lg:gap-1">
             <div className="font-barlow font-medium uppercase">{company}</div>
             <p className="hidden lg:block">▪</p>
             <div className="font-barlow">{location}</div>
           </div>
-          <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-l-2 border-dark-beige">
+          <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-l border-b rounded-bl-lg rounded-tr-lg bg-white">
             {date}
           </div>
         </div>
@@ -128,23 +132,23 @@ export function ProjCard({
 }: projCardProps) {
   // console.log(skills);
   return (
-    <div className="h-full flex flex-col divide-y divide-dark-beige border-2 border-dark-beige">
+    <div className="h-full flex flex-col divide-y divide-neutral-100 border-neutral-100 border shadow-lg rounded-lg overflow-hidden">
       <div className="relative">
-        <p className="absolute right-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-l-2 border-dark-beige">
+        <p className="absolute right-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-l border-b rounded-bl-lg rounded-tr-lg bg-white">
           {category}
         </p>
         <img className="aspect-video w-full object-cover z-0" src={img} />
       </div>
-      <div className="bg-light-beige lg:p-10 p-8 flex flex-col gap-5 flex-1">
-        <div className="gap-3">
-          <div>
-            <h1 className="font-serif text-3xl text-center">{title}</h1>
-            {monthYear && (
-              <p className="text-center font-barlow uppercase font-medium">
-                {monthYear}
-              </p>
-            )}
-          </div>
+      <div className="lg:p-10 p-8 flex flex-col gap-5 flex-1">
+        <div className="flex flex-col gap-1">
+          <h1 className="font-heading font-medium lg:text-2xl text-1xl text-center">
+            {title}
+          </h1>
+          {monthYear && (
+            <p className="text-center font-barlow uppercase font-medium">
+              {monthYear}
+            </p>
+          )}
           <InfoList sentence={sentence} destination="/projects" />
         </div>
         <SkillPills skills={skills} centeredText={true} />
@@ -166,14 +170,14 @@ export function ProjCardHorizontal({
 }: projCardProps) {
   // console.log(skills);
   return (
-    <div className="flex flex-row divide-x divide-dark-beige border-2 border-dark-beige">
-      <div className="relative w-full flex flex-col divide-y divide-dark-beige">
-        <div className="bg-light-beige flex flex-col lg:p-10 p-8 pt-12 gap-2.5 flex-1">
-          <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium bg-light-beige px-2 py-1 border-b-2 border-r-2 border-dark-beige">
+    <div className="flex flex-row divide-x divide-neutral-100 border-neutral-100 border shadow-lg rounded-lg overflow-hidden">
+      <div className="relative w-full flex flex-col">
+        <div className="flex flex-col lg:p-10 p-8 pt-12 gap-2.5 flex-1">
+          <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-r border-b rounded-br-lg bg-white">
             {category}
           </p>
           <div>
-            <h1 className="font-serif lg:text-4xl text-3xl text-center">
+            <h1 className="font-heading font-medium lg:text-3xl text-2xl text-center">
               {title}
             </h1>
             <p className="text-center font-barlow uppercase font-medium">
