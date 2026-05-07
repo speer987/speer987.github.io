@@ -48,16 +48,16 @@ export function WorkCard({
           {role}
         </div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
-          <div className="flex flex-col">
+          <div className="text-med-blue flex flex-col">
             <div className="font-barlow font-medium uppercase">{company}</div>
             <div className="font-barlow">{location}</div>
           </div>
           {destination == "" ? (
-            <div className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-r border-b rounded-bl-lg rounded-tr-lg">
+            <div className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-dark-salmon text-white rounded-bl-lg rounded-tr-lg">
               {date}
             </div>
           ) : (
-            <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-b border-l rounded-bl-lg rounded-tr-lg">
+            <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-dark-salmon text-white rounded-bl-lg rounded-tr-lg">
               {date}
             </div>
           )}

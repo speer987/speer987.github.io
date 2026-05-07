@@ -13,12 +13,12 @@ export default function Header({
   selectedName,
 }: props) {
   return (
-    <div className="hidden lg:flex lg:flex-row flex-col justify-between p-2.5 fixed h-fit z-20 w-full bg-light-beige/50 backdrop-blur-md items-center border-b border-dark-brown">
+    <div className="hidden lg:flex lg:flex-row flex-col justify-between p-2.5 fixed h-fit z-20 w-full bg-white/80 backdrop-blur-md items-center border-b border-dark-brown">
       <Link
         to="/"
         className={
           selectedName
-            ? "lg:hidden text-center text-lg p-2 font-barlow tracking-widest uppercase  text-light-beige font-semibold bg-dark-brown decoration-2 underline-offset-4"
+            ? "lg:hidden text-center text-lg p-2 font-barlow tracking-widest uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
             : "lg:hidden text-center text-lg p-2 font-barlow uppercase  tracking-widest font-semibold text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out"
         }
       >
@@ -29,7 +29,7 @@ export default function Header({
           to="/projects"
           className={
             selectedProjects
-              ? "text-center p-2 font-barlow uppercase text-light-beige font-medium bg-dark-brown decoration-2 underline-offset-4"
+              ? "text-center p-2 font-barlow uppercase text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
               : "text-center p-2 font-barlow uppercase text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
           }
         >
@@ -39,7 +39,7 @@ export default function Header({
           to="/work"
           className={
             selectedWork
-              ? "text-center p-2 font-barlow uppercase  text-light-beige font-medium bg-dark-brown decoration-2 underline-offset-4"
+              ? "text-center p-2 font-barlow uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
               : "text-center p-2 font-barlow uppercase  text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
           }
         >
@@ -49,7 +49,7 @@ export default function Header({
           to="/resume"
           className={
             selectedResume
-              ? "text-center p-2 font-barlow uppercase  text-light-beige font-medium bg-dark-brown decoration-2 underline-offset-4"
+              ? "text-center p-2 font-barlow uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
               : "text-center p-2 font-barlow uppercase  text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
           }
         >
@@ -61,7 +61,7 @@ export default function Header({
           to="/"
           className={
             selectedName
-              ? "text-center text-lg p-2 font-barlow tracking-widest uppercase  text-light-beige font-semibold bg-dark-brown decoration-2 underline-offset-4"
+              ? "text-center text-lg p-2 font-barlow tracking-widest uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
               : "text-center text-lg p-2 font-barlow uppercase  tracking-widest font-semibold text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out"
           }
         >
