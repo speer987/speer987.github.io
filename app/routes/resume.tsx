@@ -20,7 +20,10 @@ export default function Resume() {
             </div>
             <Button link="/resumes/resume.pdf" linkLabel="Download Resume" />
           </div>
-          <img className="border-2" src="/imgs/resume.png" />
+          <img
+            className="border-neutral-100 border shadow-xl hover:shadow-md hover:scale-99 transition duration-500 ease-in-out"
+            src="/imgs/resume.png"
+          />
         </div>
         <Footer />
       </div>

@@ -42,7 +42,7 @@ export function WorkCard({
   destination,
 }: workCardProps) {
   return (
-    <div className="relative flex flex-col border-neutral-100 border shadow-lg rounded-lg p-8 lg:p-10 gap-1.5">
+    <div className="shadow-xl hover:shadow-md hover:scale-99 transition duration-500 ease-in-out relative flex flex-col bg-white border-neutral-100 border rounded-lg p-8 lg:p-10 gap-1.5">
       <div>
         <div className="lg:text-2xl text-1xl font-heading font-medium ">
           {role}
@@ -83,7 +83,7 @@ export function WorkCardHorizontal({
   desc,
 }: workCardProps) {
   return (
-    <div className="relative flex flex-col divide-neutral-100 border-neutral-100 border shadow-lg rounded-lg overflow-hidden p-10 gap-1.5">
+    <div className="shadow-xl hover:shadow-md hover:scale-99 transition duration-500 relative flex flex-col bg-white divide-neutral-100 border-neutral-100 border ease-in-out rounded-lg overflow-hidden p-10 gap-1.5">
       <div>
         <div className="lg:text-3xl text-2xl font-heading font-medium ">
           {role}
@@ -132,7 +132,7 @@ export function ProjCard({
 }: projCardProps) {
   // console.log(skills);
   return (
-    <div className="h-full flex flex-col divide-y divide-neutral-100 border-neutral-100 border shadow-lg rounded-lg overflow-hidden">
+    <div className="shadow-xl hover:shadow-md hover:scale-99 transition duration-500 h-full flex flex-col bg-white divide-y divide-neutral-100 border-neutral-100 ease-in-out border rounded-lg overflow-hidden">
       <div className="relative">
         <p className="absolute right-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-med-blue text-white rounded-bl-lg">
           {category}
@@ -170,7 +170,7 @@ export function ProjCardHorizontal({
 }: projCardProps) {
   // console.log(skills);
   return (
-    <div className="flex flex-row divide-x divide-neutral-100 border-neutral-100 border shadow-lg rounded-lg overflow-hidden">
+    <div className="flex flex-row bg-white divide-x divide-neutral-100 border-neutral-100 border shadow-xl hover:shadow-md hover:scale-99 transition duration-500 ease-in-out rounded-lg overflow-hidden">
       <div className="relative w-full flex flex-col">
         <div className="flex flex-col lg:p-10 p-8 pt-12 gap-2.5 flex-1">
           <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-med-blue text-white rounded-br-lg">

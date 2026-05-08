@@ -16,7 +16,7 @@ export default function SectionLinks({ section, linkLabel, link }: props) {
       </div>
       <Link
         to={link}
-        className="w-fit cursor-pointer font-barlow uppercase text-lg border rounded-md border-dark-beige text-white bg-dark-salmon hover:bg-salmon transition duration-300 ease-in-out px-2 py-1 font-medium"
+        className="w-fit cursor-pointer font-barlow uppercase text-lg border rounded-lg border-dark-beige text-white bg-dark-salmon hover:bg-salmon transition duration-300 ease-in-out px-2 py-1 font-medium"
       >
         {linkLabel}
       </Link>
