@@ -6,17 +6,17 @@
   --font-heading: "Manrope", sans-serif;
   --font-body: "Manrope", sans-serif;
 
-  --color-dark-brown: #272932;
-  --color-caramel: #2D909F;
-  --color-dark-beige: #272932;
-  --color-light-beige: #80DBD5;
-
+  /* blues */
+  --color-light-blue: #80DBD5;
   --color-med-blue: #2D909F;
   --color-dark-blue: #1a535c;
-  --color-light-blue: #80DBD5;
+
+  /* pinks */
   --color-salmon: #FF9999;
-  --color-charcoal: #272932;
   --color-dark-salmon: #ff6b6b;
+
+  /* text and background */
+  --color-charcoal: #272932;
   --color-off-white: #fafafa;
 }
 

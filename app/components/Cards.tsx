@@ -44,7 +44,7 @@ export function WorkCard({
   return (
     <div className="shadow-xl hover:shadow-md hover:scale-99 transition duration-500 ease-in-out relative flex flex-col bg-white border-neutral-100 border rounded-lg p-8 lg:p-10 gap-1.5">
       <div>
-        <div className="lg:text-2xl text-1xl font-heading font-medium ">
+        <div className="lg:text-2xl text-xl font-heading font-medium ">
           {role}
         </div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
@@ -91,7 +91,7 @@ export function WorkCardHorizontal({
         <div className="font-barlow flex flex-row justify-between flex-wrap">
           <div className="flex lg:flex-row flex-col lg:gap-1">
             <div className="font-barlow font-medium uppercase">{company}</div>
-            <p className="hidden lg:block">▪</p>
+            <p className="hidden lg:block">•</p>
             <div className="font-barlow">{location}</div>
           </div>
           <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-med-blue text-white rounded-bl-lg">
@@ -141,7 +141,7 @@ export function ProjCard({
       </div>
       <div className="lg:p-10 p-8 flex flex-col gap-5 flex-1">
         <div className="flex flex-col gap-1">
-          <h1 className="font-heading font-medium lg:text-2xl text-1xl text-center">
+          <h1 className="font-heading font-medium lg:text-2xl text-xl text-center">
             {title}
           </h1>
           {monthYear && (

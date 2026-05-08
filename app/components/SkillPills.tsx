@@ -9,14 +9,14 @@ export default function SkillPills({ centeredText, skills }: props) {
     <div className="flex flex-col gap-1.5">
       {centeredText ? (
         <div className="flex flex-row">
-          <div className="flex-1 divide-y divide-dark-brown mr-3">
+          <div className="flex-1 divide-y divide-charcoal mr-3">
             <div className="h-1/2"></div>
             <div className="h-1/2"></div>
           </div>
           <p className="font-barlow uppercase font-medium text-center">
             Skills Used
           </p>
-          <div className="flex-1 divide-y divide-dark-brown ml-3">
+          <div className="flex-1 divide-y divide-charcoal ml-3">
             <div className="h-1/2"></div>
             <div className="h-1/2"></div>
           </div>
@@ -29,7 +29,7 @@ export default function SkillPills({ centeredText, skills }: props) {
       {/* {skills?.length > 0 && (
         <ul className="justify-center flex flex-row gap-1 flex-wrap font-barlow uppercase tracking-wide">
           {skills?.map((skill) => (
-            <li key={skill} className="bg-white px-1 border border-dark-beige">
+            <li key={skill} className="bg-white px-1 border border-charcoal">
               {skill}
             </li>
           ))}

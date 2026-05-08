@@ -13,7 +13,7 @@ export default function Hero() {
             </p>
           </div>
           <div className="text-charcoal lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10 pattern">
-            <div className="text-5xl font-heading font-semibold">About Me</div>
+            <div className="text-4xl font-heading font-semibold">About Me</div>
             <p className="font-body text-lg">
               I'm a recent grad who received a{" "}
               <b className="font-semibold">
@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center -mt-4">
-        <div className="rounded-lg animate-bounce text-dark-brown bg-light-beige flex items-center justify-center p-2 h-12 w-12">
+        <div className="rounded-lg animate-bounce text-charcoal bg-light-beige flex items-center justify-center p-2 h-12 w-12">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

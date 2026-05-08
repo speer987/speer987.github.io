@@ -6,10 +6,10 @@ export default function MobileMenu() {
 
   return (
     <div className="lg:hidden">
-      <div className="flex flex-row justify-between p-2.5 fixed h-fit z-20 w-full bg-light-beige/50 backdrop-blur-md items-center border-b border-dark-brown ">
+      <div className="flex flex-row justify-between p-2.5 fixed h-fit z-20 w-full bg-light-blue/40 backdrop-blur-md items-center border-b border-charcoal ">
         <Link
           to="/"
-          className="text-center text-lg p-2 font-barlow uppercase tracking-widest font-semibold text-dark-brown hover:underline"
+          className="text-center text-lg p-2 font-barlow uppercase tracking-widest font-semibold text-charcoal hover:underline"
         >
           Saarah Peer
         </Link>
@@ -29,7 +29,7 @@ export default function MobileMenu() {
 
       {/* Sidebar */}
       <div
-        className={`border-l border-dark-brown fixed top-0 right-0 h-full w-64 bg-light-beige z-50 transform transition-transform duration-300 ${
+        className={`border-l border-charcoal fixed top-0 right-0 h-full w-64 pattern z-50 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

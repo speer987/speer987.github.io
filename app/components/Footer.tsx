@@ -2,7 +2,7 @@ import { Link } from "react-router";
 export default function Footer() {
   return (
     <div className="divide-y divide-light-blue">
-      <div className="text-dark-brown border-t border-light-blue">
+      <div className="text-charcoal border-t border-light-blue">
         <div className="bg-dark-blue text-white lg:divide-x divide-light-blue flex lg:flex-row flex-col">
           <div className=" hidden lg:block lg:w-1/3 flex-col gap-1 py-12 lg:px-10 xl:px-25 font-body text-center justify-center">
             <div className="font-heading font-semibold  text-3xl">

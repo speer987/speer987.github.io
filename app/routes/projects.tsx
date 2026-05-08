@@ -6,7 +6,7 @@ import MobileMenu from "~/components/MobileMenu";
 
 export default function Project() {
   return (
-    <div className="divide-y divide-dark-brown text-dark-brown bg-off-white">
+    <div className="divide-y divide-charcoal text-charcoal bg-off-white">
       <Header
         selectedName={false}
         selectedResume={false}

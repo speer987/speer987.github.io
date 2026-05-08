@@ -10,7 +10,7 @@ export default function InfoListSent({ sentence, destination }: props) {
     <div className="flex flex-col">
       <div>
         {destination == "" ? (
-          <p className="pl-2 border-l-4 border-caramel">{sentence}</p>
+          <p className="pl-2 border-l-4 border-med-blue">{sentence}</p>
         ) : (
           <p>{sentence}</p>
         )}
@@ -19,7 +19,7 @@ export default function InfoListSent({ sentence, destination }: props) {
         {destination !== "" ? (
           <Link
             className="font-barlow uppercase
-      font-medium text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out"
+      font-medium text-charcoal hover:underline  hover:text-med-blue decoration-2 underline-offset-4 transition-all duration-300 ease-in-out"
             to={destination}
           >
             Read More
