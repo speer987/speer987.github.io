@@ -1,7 +1,7 @@
 const work = [
   {
     company: "Develop for Good",
-    role: "Designer",
+    role: "Product & UI Designer",
     sentence:
       "In progress",
     desc: [
