@@ -48,16 +48,16 @@ export function WorkCard({
           {role}
         </div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
-          <div className="text-med-blue flex flex-col">
-            <div className="font-barlow font-medium uppercase">{company}</div>
-            <div className="font-barlow">{location}</div>
+          <div className="text-dark-blue flex flex-col">
+            <p className="font-barlow font-medium uppercase">{company}</p>
+            <p className="font-barlow">{location}</p>
           </div>
           {destination == "" ? (
-            <div className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-dark-salmon text-white rounded-bl-lg rounded-tr-lg">
+            <div className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-med-blue text-white rounded-bl-lg rounded-tr-lg">
               {date}
             </div>
           ) : (
-            <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-dark-salmon text-white rounded-bl-lg rounded-tr-lg">
+            <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-med-blue text-white rounded-bl-lg rounded-tr-lg">
               {date}
             </div>
           )}
@@ -94,7 +94,7 @@ export function WorkCardHorizontal({
             <p className="hidden lg:block">▪</p>
             <div className="font-barlow">{location}</div>
           </div>
-          <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-l border-b rounded-bl-lg rounded-tr-lg bg-white">
+          <div className="absolute top-0 right-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-med-blue text-white rounded-bl-lg">
             {date}
           </div>
         </div>
@@ -106,7 +106,7 @@ export function WorkCardHorizontal({
 
       <div>
         {desc?.length > 0 && (
-          <ul className="list-[square] list-inside">
+          <ul className="list-disc list-inside">
             {desc?.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -134,7 +134,7 @@ export function ProjCard({
   return (
     <div className="h-full flex flex-col divide-y divide-neutral-100 border-neutral-100 border shadow-lg rounded-lg overflow-hidden">
       <div className="relative">
-        <p className="absolute right-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-l border-b rounded-bl-lg rounded-tr-lg bg-white">
+        <p className="absolute right-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-med-blue text-white rounded-bl-lg">
           {category}
         </p>
         <img className="aspect-video w-full object-cover z-0" src={img} />
@@ -173,7 +173,7 @@ export function ProjCardHorizontal({
     <div className="flex flex-row divide-x divide-neutral-100 border-neutral-100 border shadow-lg rounded-lg overflow-hidden">
       <div className="relative w-full flex flex-col">
         <div className="flex flex-col lg:p-10 p-8 pt-12 gap-2.5 flex-1">
-          <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium px-2 py-1 border-r border-b rounded-br-lg bg-white">
+          <p className="absolute left-0 top-0 z-10 font-barlow uppercase font-medium px-2 py-1 bg-med-blue text-white rounded-br-lg">
             {category}
           </p>
           <div>
@@ -188,7 +188,7 @@ export function ProjCardHorizontal({
           {/* <p>{desc}</p> */}
           <div>
             {desc?.length > 0 && (
-              <ul className="list-[square] list-inside">
+              <ul className="list-disc list-inside">
                 {desc?.map((item) => (
                   <li key={item}>{item}</li>
                 ))}

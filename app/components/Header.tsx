@@ -18,7 +18,7 @@ export default function Header({
         to="/"
         className={
           selectedName
-            ? "lg:hidden text-center text-lg p-2 font-barlow tracking-widest uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
+            ? "rounded-lg lg:hidden text-center text-lg p-2 font-barlow tracking-widest uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
             : "lg:hidden text-center text-lg p-2 font-barlow uppercase  tracking-widest font-semibold text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out"
         }
       >
@@ -29,7 +29,7 @@ export default function Header({
           to="/projects"
           className={
             selectedProjects
-              ? "text-center p-2 font-barlow uppercase text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
+              ? "rounded-lg text-center p-2 font-barlow uppercase text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
               : "text-center p-2 font-barlow uppercase text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
           }
         >
@@ -39,7 +39,7 @@ export default function Header({
           to="/work"
           className={
             selectedWork
-              ? "text-center p-2 font-barlow uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
+              ? "rounded-lg text-center p-2 font-barlow uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
               : "text-center p-2 font-barlow uppercase  text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
           }
         >
@@ -49,7 +49,7 @@ export default function Header({
           to="/resume"
           className={
             selectedResume
-              ? "text-center p-2 font-barlow uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
+              ? "rounded-lg text-center p-2 font-barlow uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
               : "text-center p-2 font-barlow uppercase  text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
           }
         >
@@ -61,7 +61,7 @@ export default function Header({
           to="/"
           className={
             selectedName
-              ? "text-center text-lg p-2 font-barlow tracking-widest uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
+              ? "rounded-lg text-center text-lg p-2 font-barlow tracking-widest uppercase  text-white font-semibold bg-dark-salmon decoration-2 underline-offset-4"
               : "text-center text-lg p-2 font-barlow uppercase  tracking-widest font-semibold text-dark-brown hover:underline  hover:text-caramel decoration-2 underline-offset-4 transition-all duration-300 ease-in-out"
           }
         >
