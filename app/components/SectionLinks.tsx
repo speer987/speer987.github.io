@@ -9,7 +9,7 @@ type props = {
 export default function SectionLinks({ section, linkLabel, link }: props) {
   return (
     <div className="flex lg:flex-row flex-col gap-3 lg:gap-0">
-      <div className="font-heading font-semibold  text-4xl">{section}</div>
+      <div className="font-heading font-bold  text-4xl">{section}</div>
       <div className="hidden lg:block flex-1 divide-y divide-charcoal ml-3">
         <div className="h-1/2"></div>
         <div className="h-1/2"></div>

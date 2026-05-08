@@ -15,7 +15,7 @@ export default function Resume() {
       <div className="lg:pt-20 xl:pt-14 pt-20">
         <div className="flex flex-col p-5 lg:p-10 xl:py-25 xl:px-45 xl:gap-10 gap-8 items-center">
           <div className="flex flex-col gap-3">
-            <div className="lg:text-4xl text-3xl font-heading font-semibold  text-center">
+            <div className="lg:text-4xl text-3xl font-heading font-bold text-center">
               My Resume
             </div>
             <Button link="/resumes/resume.pdf" linkLabel="Download Resume" />

@@ -44,7 +44,7 @@ export function WorkCard({
   return (
     <div className="shadow-xl hover:shadow-md hover:scale-99 transition duration-500 ease-in-out relative flex flex-col bg-white border-neutral-100 border rounded-lg p-8 lg:p-10 gap-1.5">
       <div>
-        <div className="lg:text-2xl text-xl font-heading font-medium ">
+        <div className="lg:text-2xl text-xl font-heading font-semibold">
           {role}
         </div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
@@ -85,7 +85,7 @@ export function WorkCardHorizontal({
   return (
     <div className="shadow-xl hover:shadow-md hover:scale-99 transition duration-500 relative flex flex-col bg-white divide-neutral-100 border-neutral-100 border ease-in-out rounded-lg overflow-hidden p-10 gap-1.5">
       <div>
-        <div className="lg:text-3xl text-2xl font-heading font-medium ">
+        <div className="lg:text-2xl text-xl font-heading font-semibold">
           {role}
         </div>
         <div className="font-barlow flex flex-row justify-between flex-wrap">
@@ -141,7 +141,7 @@ export function ProjCard({
       </div>
       <div className="lg:p-10 p-8 flex flex-col gap-5 flex-1">
         <div className="flex flex-col gap-1">
-          <h1 className="font-heading font-medium lg:text-2xl text-xl text-center">
+          <h1 className="font-heading font-semibold lg:text-2xl text-xl text-center">
             {title}
           </h1>
           {monthYear && (
@@ -177,7 +177,7 @@ export function ProjCardHorizontal({
             {category}
           </p>
           <div>
-            <h1 className="font-heading font-medium lg:text-3xl text-2xl text-center">
+            <h1 className="font-heading font-semibold lg:text-2xl text-xl text-center">
               {title}
             </h1>
             <p className="text-center font-barlow uppercase font-medium">
