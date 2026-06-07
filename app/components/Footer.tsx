@@ -58,7 +58,7 @@ export default function Footer() {
                 Linkedin
               </Link>
               <Link
-                to="/"
+                to="mailto:saarah.peer15@gmail.com"
                 className="font-barlow uppercase hover:underline  hover:text-salmon decoration-2 underline-offset-4 transition-all duration-300 ease-in-out font-medium"
               >
                 EMail
