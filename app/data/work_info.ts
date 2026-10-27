@@ -1,5 +1,29 @@
 const work = [
   {
+    company: "Stanford: Code in Place X",
+    role: "Python Section Leader (Instructor)",
+    sentence:
+      "In progress",
+    desc: [
+      "In progress",
+    ],
+    monthYear: "October 2026 - Present",
+    year: 2026,
+    location: "Los Angeles, California (Remote U.S.)",
+  },
+  {
+    company: "SkyIT Services | Subsidiary of GBCS Group",
+    role: "Frontend Developer Intern",
+    sentence:
+      "In progress",
+    desc: [
+      "In progress",
+    ],
+    monthYear: "August 2026 - Present",
+    year: 2026,
+    location: "Los Angeles, California (Remote U.S.)",
+  },
+  {
     company: "Develop for Good",
     role: "Product & UI Designer",
     sentence:
@@ -7,7 +31,7 @@ const work = [
     desc: [
       "In progress",
     ],
-    monthYear: "May 2026 - Present",
+    monthYear: "May - August 2026",
     year: 2026,
     location: "Los Angeles, California (Remote U.S.)",
   },
@@ -19,7 +43,7 @@ const work = [
     desc: [
       "Held office hours twice a week to help students with questions on coursework, assignments, and/or projects related to compiler construction and related concepts.",
     ],
-    monthYear: "Spring 2024",
+    monthYear: "January - April 2024",
     year: 2024,
     location: "Los Angeles, California",
   },
@@ -28,7 +52,7 @@ const work = [
     role: "Data Challenge Finalist",
     sentence:
       "Selected as one of 86 undergraduate students in the U.S. to join a competitive five-month data science apprenticeship which included mock interviews, a large data science project, technical workshops/webinars, group mentorship and a SQL class.",
-    monthYear: "Summer 2022",
+    monthYear: "April - September 2022",
     year: 2022,
     location: "Los Angeles, California (Remote U.S.)",
     desc: [
@@ -42,7 +66,7 @@ const work = [
     role: "Computer Science Summer Institute Student",
     sentence:
       "Completed a prestigious 4-week computer science program for high-achieving students, gaining foundational skills in JavaScript and creative coding prior to college.",
-    monthYear: "Summer 2021",
+    monthYear: "July - August 2021",
     year: 2021,
     location: "Los Angeles, California (Remote U.S.)",
     desc: [
