@@ -27,9 +27,11 @@ const work = [
     company: "Develop for Good",
     role: "Product & UI Designer",
     sentence:
-      "In progress",
+      "Redesigned a public-facing website by collaborating with a cross-functional team of engineers and designers to create a modern, user-focused experience.",
     desc: [
-      "In progress",
+      "Developed a new brand identity by creating a WCAG-compliant color palette and typography system.",
+      "Designed reusable Auto Layout components in Figma to build consistent, scalable high-fidelity prototypes.",
+      "Incorporated feedback from weekly stakeholder reviews to improve website usability and design direction.",
     ],
     monthYear: "May - August 2026",
     year: 2026,

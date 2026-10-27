@@ -10,9 +10,11 @@ export default function InfoListSent({ sentence, destination }: props) {
     <div className="flex flex-col">
       <div>
         {destination == "" ? (
-          <p className="pl-2 border-l-4 border-med-blue">{sentence}</p>
+          <p className="pl-2 border-l-4 border-med-blue font-body">
+            {sentence}
+          </p>
         ) : (
-          <p>{sentence}</p>
+          <p className="font-body">{sentence}</p>
         )}
       </div>
       <div className="text-end">

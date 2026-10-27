@@ -8,13 +8,13 @@ export default function Hero() {
             <p className="lg:text-7xl text-6xl font-heading font-bold">
               Saarah Peer
             </p>
-            <p className="lg:text-2xl text-xl">
+            <p className="lg:text-2xl text-xl font-heading">
               Software Development • Analytics • Design
             </p>
           </div>
           <div className="text-charcoal lg:w-1/2 flex flex-col gap-1 lg:p-25 p-10 pattern">
             <div className="text-4xl font-heading font-semibold">About Me</div>
-            <p className="font-body text-lg">
+            <p className="font-heading text-lg">
               I'm a recent grad who received a{" "}
               <b className="font-semibold">
                 B.S. in Computer Science with a Minor in Statistics and Data

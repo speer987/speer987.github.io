@@ -190,7 +190,9 @@ export function ProjCardHorizontal({
             {desc?.length > 0 && (
               <ul className="list-disc list-inside">
                 {desc?.map((item) => (
-                  <li className="font-body" key={item}>{item}</li>
+                  <li className="font-body" key={item}>
+                    {item}
+                  </li>
                 ))}
               </ul>
             )}
